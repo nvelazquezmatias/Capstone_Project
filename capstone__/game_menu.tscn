@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://b66e2ll0gr4wa"]
+
+[ext_resource type="Script" path="res://game_menu_sound.gd" id="1_5lkp6"]
+[ext_resource type="Texture2D" path="res://Background images/frontstore.jpg" id="1_my75a"]
+[ext_resource type="AudioStream" path="res://FilmCow Recorded SFX/specific sounds/game-start-6104.mp3" id="3_tvipc"]
+[ext_resource type="Texture2D" path="res://Start Scene (Background) + Next Button/startbutton.png" id="4_xkj5h"]
+
+[node name="Main Menu" type="Node2D"]
+script = ExtResource("1_5lkp6")
+
+[node name="Frontstore" type="Sprite2D" parent="."]
+position = Vector2(572.5, 323)
+scale = Vector2(2.05861, 1.32515)
+texture = ExtResource("1_my75a")
+
+[node name="Startbutton" type="Button" parent="."]
+offset_left = 499.0
+offset_top = 452.0
+offset_right = 661.0
+offset_bottom = 531.0
+icon = ExtResource("4_xkj5h")
+flat = true
+
+[node name="buttonClick" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_tvipc")
+
+[connection signal="pressed" from="Startbutton" to="." method="_on_startbutton_pressed"]
