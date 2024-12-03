@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cnixfbovgu2jw"
+path="res://.godot/imported/space-ambience-56265.mp3-000c4fb8cecd797db0129960a4d558ad.mp3str"
+
+[deps]
+
+source_file="res://Menu/Sound SFX/space-ambience-56265.mp3"
+dest_files=["res://.godot/imported/space-ambience-56265.mp3-000c4fb8cecd797db0129960a4d558ad.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
