@@ -32,4 +32,4 @@ position = Vector2(581.328, 327.438)
 scale = Vector2(1.57131, 1.70218)
 texture = ExtResource("4_rtdgg")
 
-[connection signal="timeout" from="Timer" to="Area2D" method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
