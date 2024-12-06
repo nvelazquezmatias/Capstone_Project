@@ -29,8 +29,8 @@ func _on_SpawnTimer_timeout():
 
 	# Connect the signal from the food to handle when it is eaten
 	food.connect("food_eaten", self, "_on_FoodEaten")
-
-func _on_FoodEaten(food_name: String):
+	
+	func _on_FoodEaten(food_name: String):
 	# Increase the score
 	#score += 1
 	#print(food_name + " eaten! Score: " + str(score))
