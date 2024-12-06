@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://7p67sja0ohlg"]
+[gd_scene load_steps=9 format=3 uid="uid://7p67sja0ohlg"]
 
 [ext_resource type="Script" path="res://Farm Opening Scene/farm_openingscene.gd" id="1_vkcol"]
 [ext_resource type="AudioStream" uid="uid://uhr2gj2nb1hj" path="res://Farm Opening Scene/distant-explosion-80398.mp3" id="2_j17o5"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cfmw7ncfk4gt5" path="res://Menu/buttons asset pack 2/green_pressed_unpressed_overlined copy.png" id="4_g46o4"]
 [ext_resource type="Texture2D" uid="uid://dtrs5yxgd7bui" path="res://Dialogue /file (23).png" id="6_ry4np"]
 [ext_resource type="Script" path="res://Farm Opening Scene/message.gd" id="7_kml3k"]
+[ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="8_4ryfc"]
 
 [node name="FarmOpeningscene" type="Node2D"]
 script = ExtResource("1_vkcol")
@@ -25,7 +26,7 @@ offset_left = 65.0
 offset_top = 74.0
 offset_right = 726.0
 offset_bottom = 202.0
-theme_override_colors/font_color = Color(0.647059, 0.8, 0.431373, 1)
+theme_override_colors/font_color = Color(0.737255, 0.882353, 0.537255, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_1rsub")
@@ -61,14 +62,17 @@ anchor_left = -0.242
 anchor_top = -0.722
 anchor_right = -0.242
 anchor_bottom = -0.722
-offset_left = -70.778
-offset_top = 32.6204
-offset_right = 243.222
-offset_bottom = 103.62
-theme_override_font_sizes/font_size = 10
-text = "Fibzi crashes in Upstate NY, with his spaceship parts scattered 
-across the state. He must find food and gather the pieces to 
-repair his ship and return home."
+offset_left = -70.688
+offset_top = 25.98
+offset_right = 227.312
+offset_bottom = 96.98
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("8_4ryfc")
+theme_override_font_sizes/font_size = 19
+text = "Fibzi crashes in Upstate NY, with his spaceship 
+parts scattered across the state. He must 
+find food and gather the pieces to repair his 
+ship and return home."
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="timeout" from="Message/Timer" to="Message" method="_on_timer_timeout"]

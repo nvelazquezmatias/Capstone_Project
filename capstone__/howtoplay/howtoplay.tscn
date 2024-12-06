@@ -26,6 +26,18 @@ position = Vector2(576.5, 326)
 scale = Vector2(1.5856, 1.17021)
 texture = SubResource("CompressedTexture2D_qq7fk")
 
+[node name="Label" type="Label" parent="Pic"]
+offset_left = -101.0
+offset_top = -101.0
+offset_right = 171.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(0.738699, 0.88118, 0.53676, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_uvruh")
+theme_override_font_sizes/font_size = 75
+text = "CONTINUE "
+
 [node name="TextureButton" type="TextureButton" parent="."]
 offset_left = 1040.0
 offset_top = 536.0
