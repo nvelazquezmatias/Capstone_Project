@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dcjmc3inoug7t"]
+[gd_scene load_steps=20 format=3 uid="uid://dcjmc3inoug7t"]
 
 [ext_resource type="Script" path="res://farm assets/farmscene.gd" id="1_wd8vl"]
 [ext_resource type="Script" path="res://alien.gd" id="2_5lmj7"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bwfeirvs5jd5" path="res://farm assets/Health Bar/basicMeters 64x8/greenMeter10.png" id="13_e6y4j"]
 [ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="14_upfwh"]
 [ext_resource type="Script" path="res://farm assets/label.gd" id="15_t6ias"]
+[ext_resource type="Texture2D" uid="uid://ds47u286andf3" path="res://Menu/buttons asset pack/BlueButtons.png" id="16_108mb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pvx1r"]
 radius = 92.1358
@@ -89,23 +90,37 @@ sprite_frames = SubResource("SpriteFrames_fompa")
 frame_progress = 0.234962
 
 [node name="Label" type="Label" parent="."]
-offset_left = 312.0
-offset_top = 176.0
-offset_right = 896.0
-offset_bottom = 261.0
+offset_left = 296.0
+offset_top = 56.0
+offset_right = 880.0
+offset_bottom = 254.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0.576471, 1, 0, 0.921569)
 theme_override_constants/shadow_offset_x = 0
 theme_override_fonts/font = ExtResource("14_upfwh")
-theme_override_font_sizes/font_size = 50
-text = "Use Your Keyboard < > 
-To Play "
+theme_override_font_sizes/font_size = 80
+text = " Use 
+
+   To Play "
 horizontal_alignment = 1
 script = ExtResource("15_t6ias")
 
 [node name="Timer" type="Timer" parent="Label"]
 wait_time = 2.0
 one_shot = true
+
+[node name="BlueButtons2" type="Sprite2D" parent="Label/Timer"]
+position = Vector2(672, 160)
+scale = Vector2(3.79584, 3.79584)
+texture = ExtResource("16_108mb")
+region_enabled = true
+region_rect = Rect2(149, 162, 15, 15)
+
+[node name="BlueButtons" type="Sprite2D" parent="Label/Timer"]
+position = Vector2(544, 160)
+scale = Vector2(3.7, 3.7)
+texture = ExtResource("16_108mb")
+region_enabled = true
+region_rect = Rect2(149, 145, 15, 15)
 
 [connection signal="timeout" from="Timer" to="Area2D" method="_on_timer_timeout"]
 [connection signal="timeout" from="Label/Timer" to="Label" method="_on_timer_timeout"]
