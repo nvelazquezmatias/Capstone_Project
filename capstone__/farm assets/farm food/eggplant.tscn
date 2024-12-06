@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8eq78h37608a"]
+
+[ext_resource type="Script" path="res://farm assets/farm food/eggplant.gd" id="1_101jw"]
+[ext_resource type="Texture2D" uid="uid://cuhcn5rl0tvlw" path="res://farm assets/farm food/Eggplant.png" id="2_fxw4x"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pp2wy"]
+radius = 12.0471
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_101jw")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(183, 132)
+scale = Vector2(2.65625, 2.65625)
+texture = ExtResource("2_fxw4x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(179, 132)
+scale = Vector2(2.65625, 2.65625)
+shape = SubResource("CapsuleShape2D_pp2wy")
