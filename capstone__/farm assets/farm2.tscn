@@ -1,9 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://cgua3m7046nak"]
+[gd_scene load_steps=2 format=3 uid="uid://cgua3m7046nak"]
 
-[ext_resource type="Texture2D" uid="uid://f1lg68wqr40y" path="res://farm morning.jpeg" id="1_tc6yp"]
-[ext_resource type="Texture2D" uid="uid://bvk5an7ixtqsd" path="res://Alien-1.png" id="2_pmgcw"]
-[ext_resource type="Script" path="res://alien_1.gd" id="3_7dnc0"]
-[ext_resource type="Script" path="res://timer.gd" id="4_hjdpe"]
+[ext_resource type="Texture2D" uid="uid://f1lg68wqr40y" path="res://farm assets/farm morning.jpeg" id="1_tc6yp"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -15,11 +12,8 @@ texture = ExtResource("1_tc6yp")
 [node name="Alien-1" type="Sprite2D" parent="."]
 position = Vector2(568, 510)
 scale = Vector2(0.595023, 0.551136)
-texture = ExtResource("2_pmgcw")
-script = ExtResource("3_7dnc0")
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
-script = ExtResource("4_hjdpe")
 
 [connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]

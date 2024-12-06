@@ -1,11 +1,56 @@
-[gd_scene load_steps=58 format=3 uid="uid://dvnsjl3c3rcg2"]
+[gd_scene load_steps=69 format=3 uid="uid://dvnsjl3c3rcg2"]
 
 [ext_resource type="Texture2D" uid="uid://sg0qdwu35toc" path="res://Menu/Background_space_original.png" id="1_bumxr"]
+[ext_resource type="Script" path="res://Intro/intro.gd" id="1_i5n7p"]
 [ext_resource type="Texture2D" uid="uid://bq1776b3mhwbn" path="res://Intro/earth.png" id="2_a7kgt"]
 [ext_resource type="AudioStream" uid="uid://bxdkdd0kkg0oo" path="res://Intro/space-rumble-29970.mp3" id="2_enwsv"]
-[ext_resource type="Texture2D" uid="uid://bmxgm3170is4p" path="res://Intro/UI books & more.png" id="3_avbxm"]
+[ext_resource type="Texture2D" uid="uid://bq6hmma7g1l3p" path="res://Dialogue /10_basic_message_boxes_by_CharlesGabriel.png" id="3_u6hg2"]
+[ext_resource type="Texture2D" uid="uid://dsedd6giiv7tk" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas1.png" id="3_vt8x3"]
+[ext_resource type="Texture2D" uid="uid://bn1dvfcd3r12p" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas2.png" id="4_j83ma"]
 [ext_resource type="FontFile" uid="uid://on3nbqaj8okm" path="res://Menu/magofonts/mago2.ttf" id="4_lx0bh"]
+[ext_resource type="Texture2D" uid="uid://cmr3mbkeunm8y" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas3.png" id="5_v8sah"]
 [ext_resource type="Texture2D" uid="uid://cfmw7ncfk4gt5" path="res://Menu/buttons asset pack 2/green_pressed_unpressed_overlined copy.png" id="6_1s70y"]
+[ext_resource type="Texture2D" uid="uid://fp65o3neat0a" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas4.png" id="6_fluxd"]
+[ext_resource type="Texture2D" uid="uid://c0ggyt1wqsmgs" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas5.png" id="7_0wnkw"]
+[ext_resource type="Texture2D" uid="uid://c3a3ttpl87vo3" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas6.png" id="8_0c1n4"]
+[ext_resource type="Texture2D" uid="uid://lvdsn5b65dil" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas8.png" id="9_qyun6"]
+[ext_resource type="Texture2D" uid="uid://bqk46p5bp6koy" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas9.png" id="10_3rctl"]
+[ext_resource type="Texture2D" uid="uid://5urn2xwaelao" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas10.png" id="11_i0g6x"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_34dp6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_vt8x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_j83ma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_v8sah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fluxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0wnkw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_0c1n4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_qyun6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3rctl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_i0g6x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3ncin"]
 atlas = ExtResource("2_a7kgt")
@@ -366,44 +411,48 @@ animations = [{
 }]
 
 [node name="Intro" type="Node2D"]
+script = ExtResource("1_i5n7p")
 
 [node name="BackgroundSpaceOriginal" type="Sprite2D" parent="."]
 position = Vector2(576.369, 323)
 scale = Vector2(4.49712, 4.33333)
 texture = ExtResource("1_bumxr")
 
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+z_index = 2
+position = Vector2(564, 207)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_34dp6")
+frame_progress = 0.88234
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(604, 321)
+position = Vector2(596, 289)
 scale = Vector2(3.8475, 3.8475)
 sprite_frames = SubResource("SpriteFrames_ya5yi")
-frame_progress = 0.457948
+frame_progress = 0.482088
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 2.0
 autostart = true
 
-[node name="UiBooks&More2" type="Sprite2D" parent="Timer"]
-position = Vector2(598, 300)
-rotation = 1.5708
-scale = Vector2(7.62038, 7.62038)
-texture = ExtResource("3_avbxm")
+[node name="10BasicMessageBoxesByCharlesGabriel" type="Sprite2D" parent="Timer"]
+position = Vector2(590, 143)
+scale = Vector2(2.43102, 2.37821)
+texture = ExtResource("3_u6hg2")
 region_enabled = true
-region_rect = Rect2(656, 80, 47, 63)
+region_rect = Rect2(1, 801, 318, 78)
 
 [node name="Label" type="Label" parent="Timer"]
-offset_left = 438.0
-offset_top = 189.0
-offset_right = 768.0
-offset_bottom = 403.0
-theme_override_colors/font_color = Color(0, 0.501961, 0, 1)
+offset_left = 269.0
+offset_top = 74.0
+offset_right = 945.0
+offset_bottom = 288.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("4_lx0bh")
 theme_override_font_sizes/font_size = 32
-text = "Resources on Fibi’s planet had been 
-running low for a while, and as 
-part of the space team, it was up 
-to him to find more to bring back. 
-What he didn’t know was that Earth 
-had been devastated by toxic nuclear 
+text = "Resources on Fibi’s planet had been running low for a while, and as 
+part of the space team, it was up to him to find more to bring back. What 
+he didn’t know was that Earth had been devastated by toxic nuclear 
 waste."
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
@@ -413,8 +462,8 @@ stream = ExtResource("2_enwsv")
 autoplay = true
 
 [node name="GreenPressedUnpressedOverlinedCopy" type="Sprite2D" parent="."]
-position = Vector2(1114, 609)
-scale = Vector2(2.2375, 2.2375)
+position = Vector2(1105, 586)
+scale = Vector2(3.58029, 3.58029)
 texture = ExtResource("6_1s70y")
 region_enabled = true
 region_rect = Rect2(170, 50, 14, 13)
@@ -425,7 +474,9 @@ anchor_left = -35.008
 anchor_top = -20.334
 anchor_right = -35.008
 anchor_bottom = -20.334
-offset_left = 477.112
-offset_top = 250.342
-offset_right = 502.112
-offset_bottom = 277.342
+offset_left = 476.705
+offset_top = 249.259
+offset_right = 501.705
+offset_bottom = 276.259
+
+[connection signal="pressed" from="GreenPressedUnpressedOverlinedCopy/TextureButton" to="." method="_on_texture_button_pressed"]

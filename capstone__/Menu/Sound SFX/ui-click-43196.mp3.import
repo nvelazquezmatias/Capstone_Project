@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://i3v38lpicgaw"
+path="res://.godot/imported/ui-click-43196.mp3-9f190c6bbf0d66b4673dda55f40e15b7.mp3str"
+
+[deps]
+
+source_file="res://Menu/Sound SFX/ui-click-43196.mp3"
+dest_files=["res://.godot/imported/ui-click-43196.mp3-9f190c6bbf0d66b4673dda55f40e15b7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
