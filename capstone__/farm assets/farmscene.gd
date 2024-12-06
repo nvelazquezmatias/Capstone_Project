@@ -12,7 +12,7 @@ func _ready():
 	add_child(spawn_timer)  
 	spawn_timer.wait_time = spawn_rate  
 	spawn_timer.autostart = true  
-	spawn_timer.connect("timeout", self, "_on_SpawnTimer_timeout")
+	spawn_timer.connect("timeout", _on_SpawnTimer_timeout)
 
 
 	if alien == null:
@@ -32,4 +32,6 @@ func _on_SpawnTimer_timeout():
 
 # Called when a food is eaten by the ali
 func _on_FoodEaten(food_name: String):
+	pass 
+	
 	
