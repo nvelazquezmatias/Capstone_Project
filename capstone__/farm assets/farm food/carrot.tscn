@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3mep4r4spdx5"]
+
+[ext_resource type="Script" path="res://farm assets/farm food/carrot.gd" id="1_4sq17"]
+[ext_resource type="Texture2D" uid="uid://bof181mmglk02" path="res://farm assets/farm food/Carrot.png" id="2_h2nwd"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_43h4y"]
+radius = 24.0237
+height = 108.55
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_4sq17")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(747, 328)
+scale = Vector2(2.6875, 2.6875)
+texture = ExtResource("2_h2nwd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(747, 330)
+rotation = 0.825541
+shape = SubResource("CapsuleShape2D_43h4y")

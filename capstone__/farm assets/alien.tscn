@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://mm6xrjogr7l1"]
+
+[ext_resource type="Texture2D" uid="uid://c2qmbfdh7g4xm" path="res://farm assets/Alien-1.png" id="1_tyug6"]
+[ext_resource type="Script" path="res://farm assets/alien.gd" id="2_22als"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tw7op"]
+radius = 89.9556
+height = 221.725
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Alien-1" type="Sprite2D" parent="."]
+position = Vector2(399, 499)
+scale = Vector2(0.767045, 0.767045)
+texture = ExtResource("1_tyug6")
+
+[node name="Area2D" type="Area2D" parent="Alien-1"]
+script = ExtResource("2_22als")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Alien-1/Area2D"]
+rotation = -1.5865
+shape = SubResource("CapsuleShape2D_tw7op")
