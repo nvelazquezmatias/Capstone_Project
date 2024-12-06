@@ -462,7 +462,7 @@ stream = ExtResource("2_enwsv")
 autoplay = true
 
 [node name="GreenPressedUnpressedOverlinedCopy" type="Sprite2D" parent="."]
-position = Vector2(1105, 586)
+position = Vector2(1088, 576)
 scale = Vector2(3.58029, 3.58029)
 texture = ExtResource("6_1s70y")
 region_enabled = true
@@ -475,8 +475,8 @@ anchor_top = -20.334
 anchor_right = -35.008
 anchor_bottom = -20.334
 offset_left = 476.705
-offset_top = 249.259
+offset_top = 250.935
 offset_right = 501.705
-offset_bottom = 276.259
+offset_bottom = 277.935
 
 [connection signal="pressed" from="GreenPressedUnpressedOverlinedCopy/TextureButton" to="." method="_on_texture_button_pressed"]

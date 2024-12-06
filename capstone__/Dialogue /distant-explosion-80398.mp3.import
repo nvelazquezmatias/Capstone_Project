@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b13q3qa5w2lgf"
+path="res://.godot/imported/distant-explosion-80398.mp3-216bca5c69969e0b03e8269eafc178b3.mp3str"
+
+[deps]
+
+source_file="res://Dialogue /distant-explosion-80398.mp3"
+dest_files=["res://.godot/imported/distant-explosion-80398.mp3-216bca5c69969e0b03e8269eafc178b3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
