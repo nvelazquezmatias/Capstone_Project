@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://7p67sja0ohlg"]
+[gd_scene load_steps=8 format=3 uid="uid://7p67sja0ohlg"]
 
 [ext_resource type="Script" path="res://Farm Opening Scene/farm_openingscene.gd" id="1_vkcol"]
 [ext_resource type="AudioStream" uid="uid://uhr2gj2nb1hj" path="res://Farm Opening Scene/distant-explosion-80398.mp3" id="2_j17o5"]
 [ext_resource type="Texture2D" uid="uid://buix74tl8cg48" path="res://Farm Opening Scene/pic.jpg" id="2_lrow7"]
 [ext_resource type="FontFile" uid="uid://on3nbqaj8okm" path="res://Menu/magofonts/mago2.ttf" id="3_1rsub"]
 [ext_resource type="Texture2D" uid="uid://cfmw7ncfk4gt5" path="res://Menu/buttons asset pack 2/green_pressed_unpressed_overlined copy.png" id="4_g46o4"]
-[ext_resource type="Texture2D" uid="uid://bq6hmma7g1l3p" path="res://Dialogue /10_basic_message_boxes_by_CharlesGabriel.png" id="6_feh6r"]
+[ext_resource type="Texture2D" uid="uid://dtrs5yxgd7bui" path="res://Dialogue /file (23).png" id="6_ry4np"]
+[ext_resource type="Script" path="res://Farm Opening Scene/message.gd" id="7_kml3k"]
 
 [node name="FarmOpeningscene" type="Node2D"]
 script = ExtResource("1_vkcol")
@@ -14,7 +15,7 @@ script = ExtResource("1_vkcol")
 stream = ExtResource("2_j17o5")
 autoplay = true
 
-[node name="Pic" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2(574, 324)
 scale = Vector2(1.5625, 1.15603)
 texture = ExtResource("2_lrow7")
@@ -44,28 +45,26 @@ texture = ExtResource("4_g46o4")
 region_enabled = true
 region_rect = Rect2(170, 50, 14, 13)
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Message" type="Sprite2D" parent="."]
+position = Vector2(616, 272)
+scale = Vector2(2.47222, 2.47222)
+texture = ExtResource("6_ry4np")
+script = ExtResource("7_kml3k")
 
-[node name="10BasicMessageBoxesByCharlesGabriel" type="Sprite2D" parent="Timer"]
-position = Vector2(576, 248)
-scale = Vector2(2.26887, 2.26887)
-texture = ExtResource("6_feh6r")
-region_enabled = true
-region_rect = Rect2(321, 881, 318, 78)
+[node name="Timer" type="Timer" parent="Message"]
+wait_time = 2.0
+one_shot = true
 
-[node name="Label2" type="Label" parent="Timer"]
-offset_left = 256.0
-offset_top = 176.0
-offset_right = 861.0
-offset_bottom = 309.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/line_spacing = 0
-theme_override_fonts/font = ExtResource("3_1rsub")
-theme_override_font_sizes/font_size = 50
-text = "Fizbi crashes on a farm in Upstate, NY 
-and must find his ship’s parts and gather 
-enough food to get home."
+[node name="Label" type="Label" parent="Message"]
+anchors_preset = -1
+anchor_left = -0.242
+anchor_top = -0.722
+anchor_right = -0.242
+anchor_bottom = -0.722
+offset_left = -77.688
+offset_top = 25.98
+offset_right = 236.312
+offset_bottom = 96.98
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="timeout" from="Message/Timer" to="Message" method="_on_timer_timeout"]

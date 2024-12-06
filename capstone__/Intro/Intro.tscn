@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://dvnsjl3c3rcg2"]
+[gd_scene load_steps=71 format=3 uid="uid://dvnsjl3c3rcg2"]
 
 [ext_resource type="Texture2D" uid="uid://sg0qdwu35toc" path="res://Menu/Background_space_original.png" id="1_bumxr"]
 [ext_resource type="Script" path="res://Intro/intro.gd" id="1_i5n7p"]
@@ -16,41 +16,8 @@
 [ext_resource type="Texture2D" uid="uid://lvdsn5b65dil" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas8.png" id="9_qyun6"]
 [ext_resource type="Texture2D" uid="uid://bqk46p5bp6koy" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas9.png" id="10_3rctl"]
 [ext_resource type="Texture2D" uid="uid://5urn2xwaelao" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas10.png" id="11_i0g6x"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_34dp6"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_vt8x3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_j83ma")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_v8sah")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_fluxd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_0wnkw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_0c1n4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_qyun6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_3rctl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_i0g6x")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[ext_resource type="Script" path="res://Intro/10_basic_message_boxes_by_charles_gabriel.gd" id="14_ygbao"]
+[ext_resource type="AudioStream" uid="uid://i3v38lpicgaw" path="res://Menu/Sound SFX/ui-click-43196.mp3" id="18_3hgq6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3ncin"]
 atlas = ExtResource("2_a7kgt")
@@ -410,56 +377,73 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_34dp6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_vt8x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_j83ma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_v8sah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fluxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0wnkw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_0c1n4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_qyun6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3rctl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_i0g6x")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
 [node name="Intro" type="Node2D"]
 script = ExtResource("1_i5n7p")
-
-[node name="BackgroundSpaceOriginal" type="Sprite2D" parent="."]
-position = Vector2(576.369, 323)
-scale = Vector2(4.49712, 4.33333)
-texture = ExtResource("1_bumxr")
-
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-z_index = 2
-position = Vector2(564, 207)
-scale = Vector2(2.5, 2.5)
-sprite_frames = SubResource("SpriteFrames_34dp6")
-frame_progress = 0.88234
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(596, 289)
-scale = Vector2(3.8475, 3.8475)
-sprite_frames = SubResource("SpriteFrames_ya5yi")
-frame_progress = 0.482088
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 2.0
-autostart = true
-
-[node name="10BasicMessageBoxesByCharlesGabriel" type="Sprite2D" parent="Timer"]
-position = Vector2(590, 143)
-scale = Vector2(2.43102, 2.37821)
-texture = ExtResource("3_u6hg2")
-region_enabled = true
-region_rect = Rect2(1, 801, 318, 78)
-
-[node name="Label" type="Label" parent="Timer"]
-offset_left = 269.0
-offset_top = 74.0
-offset_right = 945.0
-offset_bottom = 288.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("4_lx0bh")
-theme_override_font_sizes/font_size = 32
-text = "Resources on Fibi’s planet had been running low for a while, and as 
-part of the space team, it was up to him to find more to bring back. What 
-he didn’t know was that Earth had been devastated by toxic nuclear 
-waste."
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(624, 344)
 scale = Vector2(3.195, 3.195)
 stream = ExtResource("2_enwsv")
 autoplay = true
+
+[node name="BackgroundSpaceOriginal" type="Sprite2D" parent="."]
+position = Vector2(576.369, 323)
+scale = Vector2(4.49712, 4.33333)
+texture = ExtResource("1_bumxr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_as_relative = false
+position = Vector2(596, 289)
+scale = Vector2(3.8475, 3.8475)
+sprite_frames = SubResource("SpriteFrames_ya5yi")
+autoplay = "default"
+frame = 49
+frame_progress = 1.0
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(564, 207)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_34dp6")
+autoplay = "default"
+frame_progress = 0.833152
 
 [node name="GreenPressedUnpressedOverlinedCopy" type="Sprite2D" parent="."]
 position = Vector2(1088, 576)
@@ -479,4 +463,33 @@ offset_top = 250.935
 offset_right = 501.705
 offset_bottom = 277.935
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="GreenPressedUnpressedOverlinedCopy/TextureButton"]
+stream = ExtResource("18_3hgq6")
+
+[node name="10BasicMessageBoxesByCharlesGabriel" type="Sprite2D" parent="."]
+position = Vector2(568, 152)
+scale = Vector2(3.11576, 3.04808)
+texture = ExtResource("3_u6hg2")
+region_enabled = true
+region_rect = Rect2(1, 801, 318, 78)
+script = ExtResource("14_ygbao")
+
+[node name="Timer" type="Timer" parent="10BasicMessageBoxesByCharlesGabriel"]
+wait_time = 2.0
+one_shot = true
+
+[node name="Label" type="Label" parent="10BasicMessageBoxesByCharlesGabriel"]
+offset_left = -154.055
+offset_top = -34.1199
+offset_right = 156.945
+offset_bottom = 33.8801
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_lx0bh")
+theme_override_font_sizes/font_size = 15
+text = "Resources on Fibi’s planet had been running low for a while, and as 
+part of the space team, it was up to him to find more to bring back. 
+What he didn’t know was that Earth had been devastated by toxic 
+nuclear waste."
+
 [connection signal="pressed" from="GreenPressedUnpressedOverlinedCopy/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="timeout" from="10BasicMessageBoxesByCharlesGabriel/Timer" to="10BasicMessageBoxesByCharlesGabriel" method="_on_timer_timeout"]
