@@ -26,9 +26,16 @@ z_index = 2
 position = Vector2(598, 368)
 shape = SubResource("CircleShape2D_pvx1r")
 
+[node name="ProgressBar" type="ProgressBar" parent="Area2D"]
+offset_left = 44.0
+offset_top = 42.0
+offset_right = 212.0
+offset_bottom = 84.0
+step = 5.0
+
 [node name="FarmMorning" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(581.328, 327.438)
+position = Vector2(575, 323)
 scale = Vector2(1.57131, 1.70218)
 texture = ExtResource("4_rtdgg")
 
