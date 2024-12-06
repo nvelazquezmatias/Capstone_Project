@@ -479,17 +479,19 @@ wait_time = 2.0
 one_shot = true
 
 [node name="Label" type="Label" parent="10BasicMessageBoxesByCharlesGabriel"]
-offset_left = -154.055
-offset_top = -34.1199
-offset_right = 156.945
-offset_bottom = 33.8801
+offset_left = -148.92
+offset_top = -28.8706
+offset_right = 158.08
+offset_bottom = 39.1294
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("4_lx0bh")
 theme_override_font_sizes/font_size = 15
-text = "Resources on Fibi’s planet had been running low for a while, and as 
-part of the space team, it was up to him to find more to bring back. 
-What he didn’t know was that Earth had been devastated by toxic 
-nuclear waste."
+text = "Resources on Fibzis planet were running low, so he was tasked with 
+finding more. What he didn’t know was that Earth had been devastated 
+by toxic nuclear waste."
 
 [connection signal="pressed" from="GreenPressedUnpressedOverlinedCopy/TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="timeout" from="10BasicMessageBoxesByCharlesGabriel/Timer" to="10BasicMessageBoxesByCharlesGabriel" method="_on_timer_timeout"]

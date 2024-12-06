@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b7vqtgt7xrlcb"
+path="res://.godot/imported/distant-explosion-80398.mp3-67c2e1e35f3e8d9ca3126c9c7923d254.mp3str"
+
+[deps]
+
+source_file="res://Farm Opening Scene Pt2/distant-explosion-80398.mp3"
+dest_files=["res://.godot/imported/distant-explosion-80398.mp3-67c2e1e35f3e8d9ca3126c9c7923d254.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
