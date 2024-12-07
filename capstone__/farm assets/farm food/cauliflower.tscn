@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bmsatarwf115j"]
 
-[ext_resource type="Script" path="res://cauliflower.gd" id="1_oc222"]
+[ext_resource type="Script" path="res://farm assets/farm food/cauliflower.gd" id="1_oc222"]
 [ext_resource type="Texture2D" uid="uid://2c77e4oakaie" path="res://farm assets/farm food/Cauliflower.png" id="2_5k5af"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uki04"]

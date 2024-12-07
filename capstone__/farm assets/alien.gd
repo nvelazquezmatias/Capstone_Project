@@ -14,7 +14,6 @@ func _process(delta):
 		position.x = position.x + speed
 	if Input.is_action_pressed("ui_left"):
 		position.x -= speed
-
 	if Input.is_action_pressed("ui_up"):
 		position.y -= speed
 	if Input.is_action_pressed("ui_down"):

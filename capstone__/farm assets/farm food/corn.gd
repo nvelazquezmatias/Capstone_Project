@@ -4,16 +4,17 @@ extends Area2D
 @export var corn_sprite: Texture 
 @export var corn_name: String = "Corn"
 
-signal corn_eaten
+ssignal food_eaten(food_name: String)
 
+# Called when the carrot enters the collision area with another object
 func _on_Corn_body_entered(body):
 	if body.is_in_group("alien"):  # Check if the body is the alien
-		queue_free()  # dissapear
-		emit_signal("corn_eaten") 
+		emit_signal("food_eaten", corn_name)  # Emit the "food_eaten" signal with the carrot's name
+		queue_free() 
 
 # Called every frame
 func _process(delta):
-	position.y += fall_speed * delta
+	position.y += fall_speed * delta  # Make it fall down
 	
 	if position.y > 600:  
 		queue_free()

@@ -28,11 +28,19 @@ func _ready():
 		"Carrot": preload("res://farm assets/farm food/carrot.tscn"),
 		"Pumpkin": preload("res://farm assets/farm food/pumpkin.tscn"),
 		"Tomato": preload("res://farm assets/farm food/tomato.tscn"),
-		"Leek": preload("leek"),
-		"Cauliflower": preload("res://path_to_foods/Cauliflower.tscn"),
-		"Eggplant": preload("res://path_to_foods/Eggplant.tscn"),
-		"Corn": preload("res://path_to_foods/Corn.tscn")
+		"Leek": preload("res://farm assets/farm food/leek.tscn"),
+		"Cauliflower": preload("res://farm assets/farm food/cauliflower.tscn"),
+		"Eggplant": preload("res://farm assets/farm food/eggplant.tscn"),
+		"Corn": preload("res://farm assets/farm food/corn.tscn")
 	}
+		
+
+signal food_eaten(food_name: String)
+
+func _on_AlienCollision(body):
+	if body.is_in_group("alien"):  # If the alien eats the food
+		emit_signal("food_eaten", "Carrot")  # Adjust the food name as needed
+		queue_free()  # Remove the food
 		
 func _on_SpawnTimer_timeout():
 	# Choose a random food type from the dictionary

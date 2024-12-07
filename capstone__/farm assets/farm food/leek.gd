@@ -4,16 +4,17 @@ extends Area2D
 @export var leek_sprite: Texture 
 @export var leek_name: String = "Leek"
 
-signal leek_eaten
+signal food_eaten(food_name: String)
 
+# Called when the leek enters the collision area with another object
 func _on_Leek_body_entered(body):
 	if body.is_in_group("alien"):  # Check if the body is the alien
-		queue_free()  # dissapear
-		emit_signal("leek_eaten") 
+		emit_signal("food_eaten", leek_name)  # Emit the "food_eaten" signal with the carrot's name
+		queue_free() 
 
 # Called every frame
 func _process(delta):
-	position.y += fall_speed * delta
+	position.y += fall_speed * delta  # Make the carrot fall down
 	
 	if position.y > 600:  
 		queue_free()

@@ -12,4 +12,4 @@ func _process(delta: float) -> void:
 
 
 func _on_texture_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://howtoplay/howtoplay.tscn") # Replace with function body.
+	get_tree().change_scene_to_file("res://farm assets/farm2.tscn") # Replace with function body.
