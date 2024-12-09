@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dcjmc3inoug7t"]
+[gd_scene load_steps=8 format=3 uid="uid://dcjmc3inoug7t"]
 
 [ext_resource type="Script" path="res://farm assets/farmscene.gd" id="1_wd8vl"]
 [ext_resource type="Script" path="res://alien.gd" id="2_5lmj7"]
-[ext_resource type="Texture2D" uid="uid://c2qmbfdh7g4xm" path="res://farm assets/Alien-1.png" id="3_jl67s"]
+[ext_resource type="Texture2D" uid="uid://c2vi3fw2k278" path="res://farm assets/Aliens/newalien.png" id="3_4akrl"]
 [ext_resource type="Texture2D" uid="uid://f1lg68wqr40y" path="res://farm assets/farm morning.jpeg" id="4_rtdgg"]
+[ext_resource type="FontFile" uid="uid://on3nbqaj8okm" path="res://Menu/magofonts/mago2.ttf" id="5_evw37"]
+[ext_resource type="Script" path="res://farm assets/label.gd" id="6_abs4m"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pvx1r"]
 radius = 92.1358
@@ -13,13 +15,19 @@ script = ExtResource("1_wd8vl")
 
 [node name="Timer" type="Timer" parent="."]
 
+[node name="FarmMorning" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(575, 323)
+scale = Vector2(1.57131, 1.70218)
+texture = ExtResource("4_rtdgg")
+
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("2_5lmj7")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 z_index = 2
 position = Vector2(594, 358)
-texture = ExtResource("3_jl67s")
+texture = ExtResource("3_4akrl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 z_index = 2
@@ -27,16 +35,28 @@ position = Vector2(598, 368)
 shape = SubResource("CircleShape2D_pvx1r")
 
 [node name="ProgressBar" type="ProgressBar" parent="Area2D"]
-offset_left = 44.0
-offset_top = 42.0
-offset_right = 212.0
-offset_bottom = 84.0
+offset_left = 520.0
+offset_top = 464.0
+offset_right = 672.0
+offset_bottom = 491.0
 step = 5.0
 
-[node name="FarmMorning" type="Sprite2D" parent="."]
-z_index = -2
-position = Vector2(575, 323)
-scale = Vector2(1.57131, 1.70218)
-texture = ExtResource("4_rtdgg")
+[node name="Label" type="Label" parent="."]
+offset_left = 64.0
+offset_top = 16.0
+offset_right = 344.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0.647059, 0.8, 0.431373, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_evw37")
+theme_override_font_sizes/font_size = 75
+text = "Somehwhere on a farm in Syracuse..."
+script = ExtResource("6_abs4m")
+
+[node name="Timer" type="Timer" parent="Label"]
+wait_time = 2.0
+one_shot = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Label/Timer" to="Label" method="_on_timer_timeout"]
