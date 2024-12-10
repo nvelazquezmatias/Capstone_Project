@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://7p67sja0ohlg"]
+[gd_scene load_steps=7 format=3 uid="uid://7p67sja0ohlg"]
 
 [ext_resource type="AudioStream" uid="uid://bxdkdd0kkg0oo" path="res://Intro/space-rumble-29970.mp3" id="1_m3dtf"]
 [ext_resource type="Script" path="res://Farm Opening Scene/farm_openingscene.gd" id="1_vkcol"]
 [ext_resource type="Texture2D" uid="uid://buix74tl8cg48" path="res://Farm Opening Scene/pic.jpg" id="2_lrow7"]
 [ext_resource type="FontFile" uid="uid://on3nbqaj8okm" path="res://Menu/magofonts/mago2.ttf" id="3_1rsub"]
 [ext_resource type="Texture2D" uid="uid://cfmw7ncfk4gt5" path="res://Menu/buttons asset pack 2/green_pressed_unpressed_overlined copy.png" id="4_g46o4"]
+[ext_resource type="Texture2D" uid="uid://bq6hmma7g1l3p" path="res://Dialogue /10_basic_message_boxes_by_CharlesGabriel.png" id="6_awlhf"]
 
 [node name="FarmOpeningscene" type="Node2D"]
 script = ExtResource("1_vkcol")
@@ -18,6 +19,8 @@ position = Vector2(574, 324)
 scale = Vector2(1.5625, 1.15603)
 texture = ExtResource("2_lrow7")
 
+[node name="PopupPanel" type="PopupPanel" parent="Pic"]
+
 [node name="Label" type="Label" parent="."]
 offset_left = 65.0
 offset_top = 74.0
@@ -28,7 +31,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_1rsub")
 theme_override_font_sizes/font_size = 75
-text = "Syracuse, New York"
+text = "Syracuse, NY"
 
 [node name="GreenPressedUnpressedOverlinedCopy" type="Sprite2D" parent="."]
 position = Vector2(1096, 580)
@@ -37,10 +40,35 @@ texture = ExtResource("4_g46o4")
 region_enabled = true
 region_rect = Rect2(170, 50, 14, 13)
 
-[node name="TextureButton" type="TextureButton" parent="."]
-offset_left = 1054.0
-offset_top = 543.0
-offset_right = 1143.0
-offset_bottom = 627.0
+[node name="TextureButton" type="TextureButton" parent="GreenPressedUnpressedOverlinedCopy"]
+anchors_preset = -1
+anchor_left = -21.108
+anchor_top = -11.815
+anchor_right = -21.108
+anchor_bottom = -11.815
+offset_left = 283.512
+offset_top = 141.595
+offset_right = 308.512
+offset_bottom = 165.595
 
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[node name="10BasicMessageBoxesByCharlesGabriel" type="Sprite2D" parent="."]
+position = Vector2(584, 232)
+scale = Vector2(2.4331, 1.73718)
+texture = ExtResource("6_awlhf")
+region_enabled = true
+region_rect = Rect2(321, 881, 318, 78)
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 240.0
+offset_top = 176.0
+offset_right = 906.0
+offset_bottom = 284.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("3_1rsub")
+theme_override_font_sizes/font_size = 45
+text = "Fizbi crashes into earth and lands in Upstate, NY. 
+He must gather enough food and find his ship parts 
+to go back home."
+
+[connection signal="pressed" from="GreenPressedUnpressedOverlinedCopy/TextureButton" to="." method="_on_texture_button_pressed"]
