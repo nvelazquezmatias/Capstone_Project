@@ -1,0 +1,114 @@
+[gd_scene load_steps=14 format=3 uid="uid://b1mk8lhcrg35o"]
+
+[ext_resource type="Texture2D" uid="uid://sg0qdwu35toc" path="res://Menu/Background_space_original.png" id="1_pluru"]
+[ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="2_f65i1"]
+[ext_resource type="Texture2D" uid="uid://c3m6tur4wd7pv" path="res://Level1Reward/file (24).png" id="4_jco11"]
+[ext_resource type="Texture2D" uid="uid://bara0wpv8cxx1" path="res://LevelUp/SpaceshipKit.png" id="5_ih1ix"]
+[ext_resource type="Texture2D" uid="uid://qmm38dp3uwkr" path="res://Level1Reward/stars.png" id="5_lhxx3"]
+[ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Menu/buttons asset pack/GreenButtons.png" id="6_bc7tq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kcdj6"]
+atlas = ExtResource("5_lhxx3")
+region = Rect2(0, 0, 18, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mg8wf"]
+atlas = ExtResource("5_lhxx3")
+region = Rect2(18, 0, 18, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_er4ju"]
+atlas = ExtResource("5_lhxx3")
+region = Rect2(36, 0, 18, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a43kf"]
+atlas = ExtResource("5_lhxx3")
+region = Rect2(54, 0, 18, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7paki"]
+atlas = ExtResource("5_lhxx3")
+region = Rect2(72, 0, 18, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqm8t"]
+atlas = ExtResource("5_lhxx3")
+region = Rect2(90, 0, 18, 50)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3v8qn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kcdj6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mg8wf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_er4ju")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a43kf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7paki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqm8t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Newimage" type="Node2D"]
+
+[node name="BackgroundSpaceOriginal" type="Sprite2D" parent="."]
+position = Vector2(576, 328)
+scale = Vector2(4.5, 4.37333)
+texture = ExtResource("1_pluru")
+
+[node name="File(24)" type="Sprite2D" parent="."]
+position = Vector2(592, 464)
+scale = Vector2(1.25978, 1.25978)
+texture = ExtResource("4_jco11")
+region_enabled = true
+region_rect = Rect2(318, 283, 249, 179)
+
+[node name="SpaceshipKit" type="Sprite2D" parent="."]
+position = Vector2(592, 280)
+scale = Vector2(5.10714, 5.10714)
+texture = ExtResource("5_ih1ix")
+region_enabled = true
+region_rect = Rect2(161, 65, 28.3817, 30)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(672, 552)
+scale = Vector2(6.38789, 6.38789)
+sprite_frames = SubResource("SpriteFrames_3v8qn")
+autoplay = "default"
+frame_progress = 0.942686
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(432, 392)
+scale = Vector2(10.5536, 10.5536)
+sprite_frames = SubResource("SpriteFrames_3v8qn")
+autoplay = "default"
+frame_progress = 0.524319
+
+[node name="GreenButtons" type="Sprite2D" parent="."]
+position = Vector2(1056, 544)
+scale = Vector2(3.85834, 3.85834)
+texture = ExtResource("6_bc7tq")
+region_enabled = true
+region_rect = Rect2(165, 88, 15, 15)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 192.0
+offset_top = 64.0
+offset_right = 1016.0
+offset_bottom = 184.0
+theme_override_colors/font_color = Color(0.647059, 0.8, 0.431373, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_f65i1")
+theme_override_font_sizes/font_size = 100
+text = "Wings"
+horizontal_alignment = 1
+vertical_alignment = 1

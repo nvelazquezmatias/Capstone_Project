@@ -1,0 +1,150 @@
+[gd_scene load_steps=18 format=3 uid="uid://1hmbs4v73u74"]
+
+[ext_resource type="Script" path="res://LevelUp/reward.gd" id="1_hwf1c"]
+[ext_resource type="Texture2D" uid="uid://sg0qdwu35toc" path="res://Menu/Background_space_original.png" id="2_j7c71"]
+[ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="2_lj7fr"]
+[ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="3_0tfww"]
+[ext_resource type="Texture2D" uid="uid://beg4bg0brq8o2" path="res://LevelUp/FallingStar_Sprites.png" id="4_j4iiu"]
+[ext_resource type="FontFile" uid="uid://on3nbqaj8okm" path="res://Menu/magofonts/mago2.ttf" id="5_8cdn4"]
+[ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Menu/buttons asset pack/GreenButtons.png" id="6_450gm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_de0hp"]
+atlas = ExtResource("4_j4iiu")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4inb4"]
+atlas = ExtResource("4_j4iiu")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5urqy"]
+atlas = ExtResource("4_j4iiu")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4trk"]
+atlas = ExtResource("4_j4iiu")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kir6n"]
+atlas = ExtResource("4_j4iiu")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pppob"]
+atlas = ExtResource("4_j4iiu")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nk2e6"]
+atlas = ExtResource("4_j4iiu")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ee48d"]
+atlas = ExtResource("4_j4iiu")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6igfb"]
+atlas = ExtResource("4_j4iiu")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_75v81"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_de0hp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4inb4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5urqy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h4trk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kir6n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pppob")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nk2e6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ee48d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6igfb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Reward" type="Node2D"]
+script = ExtResource("1_hwf1c")
+
+[node name="BackgroundSpaceOriginal" type="Sprite2D" parent="."]
+position = Vector2(574.24, 329.844)
+scale = Vector2(4.61125, 4.61125)
+texture = ExtResource("2_j7c71")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(904, 248)
+scale = Vector2(3.91406, 3.91406)
+sprite_frames = SubResource("SpriteFrames_75v81")
+autoplay = "default"
+frame_progress = 0.301576
+
+[node name="Label" type="Label" parent="."]
+offset_left = 248.0
+offset_top = 112.0
+offset_right = 898.0
+offset_bottom = 271.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_lj7fr")
+theme_override_font_sizes/font_size = 200
+text = "LEVEL UP!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = 464.0
+offset_top = 328.0
+offset_right = 744.0
+offset_bottom = 380.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_0tfww")
+theme_override_font_sizes/font_size = 60
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 560.0
+offset_top = 264.0
+offset_right = 668.0
+offset_bottom = 324.0
+theme_override_colors/font_color = Color(0.647059, 0.8, 0.431373, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 20
+theme_override_fonts/font = ExtResource("5_8cdn4")
+theme_override_font_sizes/font_size = 75
+text = "Score"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GreenButtons" type="Sprite2D" parent="."]
+position = Vector2(1056, 544)
+scale = Vector2(3.65, 3.65)
+texture = ExtResource("6_450gm")
+region_enabled = true
+region_rect = Rect2(165, 88, 15, 15)
+
+[node name="TextureButton" type="TextureButton" parent="GreenButtons"]
+anchors_preset = -1
+anchor_left = -18.788
+anchor_top = -9.436
+anchor_right = -18.788
+anchor_bottom = -9.436
+offset_left = 266.82
+offset_top = 126.54
+offset_right = 299.82
+offset_bottom = 156.54
+
+[connection signal="pressed" from="GreenButtons/TextureButton" to="." method="_on_texture_button_pressed"]

@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://7p67sja0ohlg"]
+[gd_scene load_steps=8 format=3 uid="uid://7p67sja0ohlg"]
 
 [ext_resource type="AudioStream" uid="uid://bxdkdd0kkg0oo" path="res://Intro/space-rumble-29970.mp3" id="1_m3dtf"]
 [ext_resource type="Script" path="res://Farm Opening Scene/farm_openingscene.gd" id="1_vkcol"]
 [ext_resource type="Texture2D" uid="uid://buix74tl8cg48" path="res://Farm Opening Scene/pic.jpg" id="2_lrow7"]
 [ext_resource type="FontFile" uid="uid://on3nbqaj8okm" path="res://Menu/magofonts/mago2.ttf" id="3_1rsub"]
+[ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="4_5tfpk"]
 [ext_resource type="Texture2D" uid="uid://cfmw7ncfk4gt5" path="res://Menu/buttons asset pack 2/green_pressed_unpressed_overlined copy.png" id="4_g46o4"]
 [ext_resource type="Texture2D" uid="uid://bq6hmma7g1l3p" path="res://Dialogue /10_basic_message_boxes_by_CharlesGabriel.png" id="6_awlhf"]
 
@@ -22,15 +23,16 @@ texture = ExtResource("2_lrow7")
 [node name="PopupPanel" type="PopupPanel" parent="Pic"]
 
 [node name="Label" type="Label" parent="."]
-offset_left = 65.0
-offset_top = 74.0
-offset_right = 726.0
-offset_bottom = 202.0
+offset_left = 64.0
+offset_top = 24.0
+offset_right = 725.0
+offset_bottom = 152.0
 theme_override_colors/font_color = Color(0.647059, 0.8, 0.431373, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("3_1rsub")
-theme_override_font_sizes/font_size = 75
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("4_5tfpk")
+theme_override_font_sizes/font_size = 150
 text = "Syracuse, NY"
 
 [node name="GreenPressedUnpressedOverlinedCopy" type="Sprite2D" parent="."]
@@ -52,23 +54,23 @@ offset_right = 308.512
 offset_bottom = 165.595
 
 [node name="10BasicMessageBoxesByCharlesGabriel" type="Sprite2D" parent="."]
-position = Vector2(584, 232)
-scale = Vector2(2.4331, 1.73718)
+position = Vector2(584, 240)
+scale = Vector2(2.94037, 2.09936)
 texture = ExtResource("6_awlhf")
 region_enabled = true
 region_rect = Rect2(321, 881, 318, 78)
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 240.0
-offset_top = 176.0
-offset_right = 906.0
-offset_bottom = 284.0
+offset_left = 176.0
+offset_top = 184.0
+offset_right = 1008.0
+offset_bottom = 292.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("3_1rsub")
-theme_override_font_sizes/font_size = 45
-text = "Fizbi crashes into earth and lands in Upstate, NY. 
-He must gather enough food and find his ship parts 
-to go back home."
+theme_override_font_sizes/font_size = 50
+text = "Fizbi crashes into earth and lands in Upstate, NY. He 
+must gather enough food and find his ship parts to go 
+back home."
 
 [connection signal="pressed" from="GreenPressedUnpressedOverlinedCopy/TextureButton" to="." method="_on_texture_button_pressed"]

@@ -1,0 +1,116 @@
+[gd_scene load_steps=14 format=3 uid="uid://daoljb3lld4nq"]
+
+[ext_resource type="Texture2D" uid="uid://sg0qdwu35toc" path="res://Menu/Background_space_original.png" id="1_4qhfv"]
+[ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="2_loqd2"]
+[ext_resource type="Texture2D" uid="uid://c3m6tur4wd7pv" path="res://Level1Reward/file (24).png" id="3_v7e1y"]
+[ext_resource type="Script" path="res://Level1Reward/node_2d.gd" id="3_vccrv"]
+[ext_resource type="Texture2D" uid="uid://qmm38dp3uwkr" path="res://Level1Reward/stars.png" id="5_td1bo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sslf6"]
+atlas = ExtResource("5_td1bo")
+region = Rect2(0, 0, 18, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rn8a5"]
+atlas = ExtResource("5_td1bo")
+region = Rect2(18, 0, 18, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vj7sg"]
+atlas = ExtResource("5_td1bo")
+region = Rect2(36, 0, 18, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6iaep"]
+atlas = ExtResource("5_td1bo")
+region = Rect2(54, 0, 18, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a22v8"]
+atlas = ExtResource("5_td1bo")
+region = Rect2(72, 0, 18, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ulb8"]
+atlas = ExtResource("5_td1bo")
+region = Rect2(90, 0, 18, 50)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pvef1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sslf6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rn8a5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vj7sg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6iaep")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a22v8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ulb8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kbw0j"]
+
+[node name="Level1Reward" type="Node2D"]
+
+[node name="BackgroundSpaceOriginal" type="Sprite2D" parent="."]
+z_index = -7
+position = Vector2(576, 336)
+scale = Vector2(4.625, 4.48)
+texture = ExtResource("1_4qhfv")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 176.0
+offset_top = 72.0
+offset_right = 1001.0
+offset_bottom = 191.0
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("2_loqd2")
+theme_override_font_sizes/font_size = 150
+text = "LEVEL 1 REWARD"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(584, 408)
+scale = Vector2(1.55921, 1.55921)
+script = ExtResource("3_vccrv")
+
+[node name="Box1" type="Sprite2D" parent="Node2D"]
+position = Vector2(-12.8047, -0.70153)
+scale = Vector2(1.06421, 1.07094)
+texture = ExtResource("3_v7e1y")
+region_enabled = true
+region_rect = Rect2(113, 310, 178, 152)
+
+[node name="TextureButton" type="TextureButton" parent="Node2D"]
+offset_left = -144.0
+offset_top = -144.0
+offset_right = 169.0
+offset_bottom = 103.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(448, 304)
+scale = Vector2(8.125, 8.125)
+sprite_frames = SubResource("SpriteFrames_pvef1")
+autoplay = "default"
+frame_progress = 0.831452
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(664, 496)
+scale = Vector2(8.125, 8.125)
+sprite_frames = SubResource("SpriteFrames_pvef1")
+autoplay = "default"
+frame_progress = 0.386974
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_kbw0j")
+
+[connection signal="pressed" from="Node2D/TextureButton" to="Node2D" method="_on_texture_button_pressed"]
