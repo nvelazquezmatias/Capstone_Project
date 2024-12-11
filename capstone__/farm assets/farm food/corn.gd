@@ -1,20 +1,26 @@
 extends Area2D
 
-@export var fall_speed: float = 250  # Speed at which the carrot falls
-@export var corn_sprite: Texture
+@export var speed: float = 100.0  # Falling speed of the food
 
-signal food_eaten(food_name)
-
-
-# Called when the carrot enters the collision area with another object
-func _on_Corn_body_entered(body):
-	if body.is_in_group("alien"):  # Check if the body is the alien
-		emit_signal("food_eaten", "Corn")  # Emit the "food_eaten" signal with the carrot's name
-		queue_free()
+# Called when the food is added to the scene
+func _ready() -> void:
+	set_process(true)
 
 # Called every frame
-func _process(delta):
-	position.y += fall_speed * delta  # Make it fall down
+func _process(delta: float) -> void:
+	# Move the food downwards
+	position.y += speed * delta
 	
-	if position.y > 600:
-		queue_free()
+	# Check if the food reaches the bottom of the screen
+	if position.y > get_viewport_rect().size.y:
+		var main_game = get_tree().root.get_node("Main")
+		if main_game:  # Check if main node is set
+			main_game.lose_life()  # Call lose_life when the food goes off-screen
+		queue_free()  # Remove food from the scene
+
+# Function to handle collisions with the alien
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	if area.is_in_group("alien"):
+		get_tree().current_scene.update_score(1)  # Increase score when food is eaten
+		emit_signal("food_eaten", "Food")  # Signal that food was eaten
+		queue_free()  # Remove food from the scene
