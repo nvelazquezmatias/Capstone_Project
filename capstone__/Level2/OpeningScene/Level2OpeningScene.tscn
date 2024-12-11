@@ -1,3 +1,18 @@
-[gd_scene format=3 uid="uid://bspb6k21phu8w"]
+[gd_scene load_steps=3 format=3 uid="uid://bspb6k21phu8w"]
+
+[ext_resource type="Texture2D" uid="uid://b2pldl5h6g2v8" path="res://Level2/OpeningScene/Intro.jpg" id="1_12uov"]
+[ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Menu/buttons asset pack/GreenButtons.png" id="2_1oejs"]
 
 [node name="Level2OpeningScene" type="Node2D"]
+
+[node name="Intro" type="Sprite2D" parent="."]
+position = Vector2(576, 327.249)
+scale = Vector2(1.61088, 1.21467)
+texture = ExtResource("1_12uov")
+
+[node name="GreenButtons" type="Sprite2D" parent="."]
+position = Vector2(1057.03, 545.031)
+scale = Vector2(3.06251, 3.06251)
+texture = ExtResource("2_1oejs")
+region_enabled = true
+region_rect = Rect2(165, 88, 15, 15)

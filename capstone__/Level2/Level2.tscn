@@ -1,3 +1,24 @@
-[gd_scene format=3 uid="uid://bfgmg6j31iuma"]
+[gd_scene load_steps=3 format=3 uid="uid://bfgmg6j31iuma"]
+
+[ext_resource type="Texture2D" uid="uid://46qud15ibje8" path="res://Level2/Background/istockphoto-689045072-170667a.jpg" id="1_ghwhi"]
+[ext_resource type="Texture2D" uid="uid://cxvs7njjdxaoh" path="res://farm assets/Aliens/Alien-1.png" id="2_ny3ag"]
 
 [node name="Level2" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(2.1295, 2.19355)
+texture = ExtResource("1_ghwhi")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Alien-1" type="Sprite2D" parent="."]
+position = Vector2(792, 520)
+scale = Vector2(1.27273, 1.27273)
+texture = ExtResource("2_ny3ag")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = 32.0
+offset_top = 56.0
+offset_right = 360.0
+offset_bottom = 83.0
