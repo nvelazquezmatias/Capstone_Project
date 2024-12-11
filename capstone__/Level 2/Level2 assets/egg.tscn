@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://djppo2gmoj7pg"]
+
+[ext_resource type="Script" path="res://Level 2/Level2 assets/egg.gd" id="1_wap54"]
+[ext_resource type="Texture2D" uid="uid://bqwso2pn46alo" path="res://Level 2/Level2 assets/Pixel_Mart/egg_brown.png" id="2_dyi5w"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ymn2a"]
+radius = 11.7541
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(411, 231)
+scale = Vector2(2.63281, 2.63281)
+script = ExtResource("1_wap54")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+scale = Vector2(1, 1)
+texture = ExtResource("2_dyi5w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+rotation = -1.53589
+shape = SubResource("CapsuleShape2D_ymn2a")
