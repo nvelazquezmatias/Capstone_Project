@@ -2,16 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/receipt.png.import
 uid="uid://e8j8or0oqdw0"
 path="res://.godot/imported/receipt.png-2223fb1fe0b953bf169ec9f3cd72c3ea.ctex"
+=======
+uid="uid://dkir1bcugobty"
+path="res://.godot/imported/receipt.png-2c63aecf29728827d704a853373b2ecb.ctex"
+>>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/receipt.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/receipt.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/receipt.png"
 dest_files=["res://.godot/imported/receipt.png-2223fb1fe0b953bf169ec9f3cd72c3ea.ctex"]
+=======
+source_file="res://Level2/Pixel_Mart/receipt.png"
+dest_files=["res://.godot/imported/receipt.png-2c63aecf29728827d704a853373b2ecb.ctex"]
+>>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/receipt.png.import
 
 [params]
 

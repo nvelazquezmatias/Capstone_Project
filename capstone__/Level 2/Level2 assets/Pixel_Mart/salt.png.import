@@ -2,16 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/salt.png.import
 uid="uid://be16m8d6a8vql"
 path="res://.godot/imported/salt.png-54475a2ac72de5aa6d5bb3c538079c44.ctex"
+=======
+uid="uid://c2nipkx86utgc"
+path="res://.godot/imported/salt.png-1ce805dce460baf17ed285800282f305.ctex"
+>>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/salt.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/salt.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/salt.png"
 dest_files=["res://.godot/imported/salt.png-54475a2ac72de5aa6d5bb3c538079c44.ctex"]
+=======
+source_file="res://Level2/Pixel_Mart/salt.png"
+dest_files=["res://.godot/imported/salt.png-1ce805dce460baf17ed285800282f305.ctex"]
+>>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/salt.png.import
 
 [params]
 

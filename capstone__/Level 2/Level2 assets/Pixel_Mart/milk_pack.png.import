@@ -2,16 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/milk_pack.png.import
 uid="uid://cbkn2hgd0tnuy"
 path="res://.godot/imported/milk_pack.png-fa42dc2a3ef5e0cbae361ab29ca72fe1.ctex"
+=======
+uid="uid://dym7nu0rnitkf"
+path="res://.godot/imported/milk_pack.png-11edebb465c1b650a8f45268b385f1db.ctex"
+>>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/milk_pack.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/milk_pack.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/milk_pack.png"
 dest_files=["res://.godot/imported/milk_pack.png-fa42dc2a3ef5e0cbae361ab29ca72fe1.ctex"]
+=======
+source_file="res://Level2/Pixel_Mart/milk_pack.png"
+dest_files=["res://.godot/imported/milk_pack.png-11edebb465c1b650a8f45268b385f1db.ctex"]
+>>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/milk_pack.png.import
 
 [params]
 

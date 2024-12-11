@@ -2,16 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/potato_p.png.import
 uid="uid://c3n86a4rx0bfc"
 path="res://.godot/imported/potato_p.png-2f2e71b107f5417ac1bbd7d5ecf8b67c.ctex"
+=======
+uid="uid://ccfeheph3bf5q"
+path="res://.godot/imported/potato_p.png-cc010714090038290aed73ce6c54a99f.ctex"
+>>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/potato_p.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/potato_p.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/potato_p.png"
 dest_files=["res://.godot/imported/potato_p.png-2f2e71b107f5417ac1bbd7d5ecf8b67c.ctex"]
+=======
+source_file="res://Level2/Pixel_Mart/potato_p.png"
+dest_files=["res://.godot/imported/potato_p.png-cc010714090038290aed73ce6c54a99f.ctex"]
+>>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/potato_p.png.import
 
 [params]
 

@@ -22,7 +22,6 @@ theme_override_fonts/font = ExtResource("5_sn2q0")
 theme_override_font_sizes/font_size = 35
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 4.0
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("2_5lmj7")
@@ -53,7 +52,4 @@ theme_override_font_sizes/font_size = 30
 step = 5.0
 rounded = true
 
-[node name="Timer2" type="Timer" parent="."]
-
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
