@@ -72,12 +72,10 @@ shape = SubResource("RectangleShape2D_urlo7")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="FarmMorning/StaticBody2D"]
 position = Vector2(-373.574, 4.69986)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_krlju")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="FarmMorning/StaticBody2D"]
 position = Vector2(374.846, -2.20622)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_ucl2o")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
