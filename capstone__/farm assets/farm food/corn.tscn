@@ -4,20 +4,17 @@
 [ext_resource type="Texture2D" uid="uid://m2w4tmma4vrv" path="res://farm assets/farm food/Corn.png" id="2_xnnjo"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cs4ke"]
-radius = 25.0
+radius = 44.8531
 height = 123.043
 
-[node name="Node2D" type="Node2D"]
-
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D"]
 script = ExtResource("1_o5ik7")
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
-position = Vector2(346, 467)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 3.05176e-05)
 scale = Vector2(3.375, 3.375)
 texture = ExtResource("2_xnnjo")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(349, 468)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 0.802851
 shape = SubResource("CapsuleShape2D_cs4ke")

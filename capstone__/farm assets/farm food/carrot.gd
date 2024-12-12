@@ -19,8 +19,8 @@ func _process(delta: float) -> void:
 		queue_free()  # Remove food from the scene
 
 # Function to handle collisions with the alien
-func _on_area_2d_area_entered(area: Area2D) -> void:
-	if area.is_in_group("alien"):
-		get_tree().current_scene.update_score(1)  # Increase score when food is eaten
-		emit_signal("food_eaten", "Food")  # Signal that food was eaten
-		queue_free()  # Remove food from the scene
+##func _on_area_2d_area_entered(area: Area2D) -> void:
+	#if area.is_in_group("alien"):
+		#get_tree().current_scene.update_score(1)  # Increase score when food is eaten
+		#emit_signal("food_eaten", "Food")  # Signal that food was eaten
+		#queue_free()  # Remove food from the scene

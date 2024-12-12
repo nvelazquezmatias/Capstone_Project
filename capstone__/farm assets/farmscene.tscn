@@ -1,13 +1,20 @@
-[gd_scene load_steps=7 format=3 uid="uid://dcjmc3inoug7t"]
+[gd_scene load_steps=10 format=3 uid="uid://dcjmc3inoug7t"]
 
 [ext_resource type="Script" path="res://farm assets/farmscene.gd" id="1_wd8vl"]
 [ext_resource type="Script" path="res://alien.gd" id="2_5lmj7"]
 [ext_resource type="Texture2D" uid="uid://c2qmbfdh7g4xm" path="res://farm assets/Alien-1.png" id="3_jl67s"]
 [ext_resource type="Texture2D" uid="uid://f1lg68wqr40y" path="res://farm assets/farm morning.jpeg" id="4_rtdgg"]
 [ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="5_sn2q0"]
+[ext_resource type="Texture2D" uid="uid://dt6n0ax0rijr3" path="res://Level2/message.png" id="6_k1e7k"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pvx1r"]
 radius = 92.1358
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l0hcl"]
+radius = 120.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_urlo7"]
+size = Vector2(748.237, 24.0996)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_wd8vl")
@@ -22,34 +29,104 @@ theme_override_fonts/font = ExtResource("5_sn2q0")
 theme_override_font_sizes/font_size = 35
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Alien" type="CharacterBody2D" parent="."]
 script = ExtResource("2_5lmj7")
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Alien"]
 z_index = 2
 position = Vector2(594, 358)
 texture = ExtResource("3_jl67s")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Alien"]
 z_index = 2
 position = Vector2(598, 368)
 shape = SubResource("CircleShape2D_pvx1r")
 
+[node name="Area2D" type="Area2D" parent="Alien"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Alien/Area2D"]
+position = Vector2(592, 360)
+shape = SubResource("CircleShape2D_l0hcl")
+
 [node name="FarmMorning" type="Sprite2D" parent="."]
-z_index = -2
+z_index = -10
 position = Vector2(575, 323)
 scale = Vector2(1.57131, 1.70218)
 texture = ExtResource("4_rtdgg")
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FarmMorning"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FarmMorning/StaticBody2D"]
+position = Vector2(10.819, 195.631)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_urlo7")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 offset_left = 48.0
 offset_top = 72.0
 offset_right = 372.0
-offset_bottom = 110.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_sn2q0")
 theme_override_font_sizes/font_size = 30
-step = 5.0
+max_value = 20.0
+step = 1.0
 rounded = true
 
+[node name="Label2" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = -1.062
+anchor_top = -3.606
+anchor_right = -1.062
+anchor_bottom = -3.606
+offset_left = 48.0
+offset_top = 40.0
+offset_right = 93.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.66451, 0.66451, 0.66451, 1)
+theme_override_colors/font_outline_color = Color(0.203322, 0.203322, 0.203322, 1)
+theme_override_fonts/font = ExtResource("5_sn2q0")
+theme_override_font_sizes/font_size = 40
+text = "Bag"
+
+[node name="Message" type="Sprite2D" parent="."]
+position = Vector2(672, 120)
+scale = Vector2(1.06964, 0.878866)
+texture = ExtResource("6_k1e7k")
+region_enabled = true
+region_rect = Rect2(68, 160, 409, 169)
+
+[node name="Label2" type="Label" parent="Message"]
+anchors_preset = -1
+anchor_left = -0.888
+anchor_top = -1.939
+anchor_right = -0.888
+anchor_bottom = -1.939
+offset_left = 192.007
+offset_top = 261.396
+offset_right = 558.007
+offset_bottom = 357.396
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.66451, 0.66451, 0.66451, 1)
+theme_override_colors/font_outline_color = Color(0.203322, 0.203322, 0.203322, 1)
+theme_override_fonts/font = ExtResource("5_sn2q0")
+theme_override_font_sizes/font_size = 25
+text = "Instructions: 
+Use < and > to collect food and reach 100%
+Avoid toxic waste
+Fill your bag to unlock new locations!
+"
+
+[node name="spawntimer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="foodeaten" from="Alien" to="." method="_on_alien_foodeaten"]
+[connection signal="area_entered" from="Alien/Area2D" to="Alien" method="_on_area_2d_area_entered"]
+[connection signal="timeout" from="spawntimer" to="." method="_on_spawntimer_timeout"]

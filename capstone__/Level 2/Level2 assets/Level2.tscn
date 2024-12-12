@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bfgmg6j31iuma"]
+[gd_scene load_steps=6 format=3 uid="uid://bfgmg6j31iuma"]
 
 [ext_resource type="Texture2D" uid="uid://46qud15ibje8" path="res://Level2/Background/istockphoto-689045072-170667a.jpg" id="1_ghwhi"]
 [ext_resource type="Texture2D" uid="uid://cxvs7njjdxaoh" path="res://farm assets/Aliens/Alien-1.png" id="2_ny3ag"]
+[ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="3_ivvu0"]
+[ext_resource type="Texture2D" uid="uid://dt6n0ax0rijr3" path="res://Level2/message.png" id="4_0fh8s"]
+[ext_resource type="Script" path="res://Level2/message.gd" id="5_i17yx"]
 
 [node name="Level2" type="Node2D"]
 
@@ -13,12 +16,55 @@ texture = ExtResource("1_ghwhi")
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="Alien-1" type="Sprite2D" parent="."]
-position = Vector2(792, 520)
+position = Vector2(840, 528)
 scale = Vector2(1.27273, 1.27273)
 texture = ExtResource("2_ny3ag")
 
+[node name="Label" type="Label" parent="."]
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 304.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_ivvu0")
+theme_override_font_sizes/font_size = 40
+text = "BAG"
+
 [node name="ProgressBar" type="ProgressBar" parent="."]
 offset_left = 32.0
-offset_top = 56.0
-offset_right = 360.0
-offset_bottom = 83.0
+offset_top = 72.0
+offset_right = 312.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ivvu0")
+theme_override_font_sizes/font_size = 40
+
+[node name="Message" type="Sprite2D" parent="."]
+position = Vector2(743.713, 351.888)
+scale = Vector2(1.63036, 1.63036)
+texture = ExtResource("4_0fh8s")
+region_enabled = true
+region_rect = Rect2(227, 45, 251, 98)
+script = ExtResource("5_i17yx")
+
+[node name="Label" type="Label" parent="Message"]
+anchors_preset = -1
+anchor_left = -1.317
+anchor_top = -1.702
+anchor_right = -1.317
+anchor_bottom = -1.702
+offset_left = 227.699
+offset_top = 137.424
+offset_right = 448.699
+offset_bottom = 181.424
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_ivvu0")
+text = "Not much food around, but hey, at least 
+it tastes good!"
+
+[node name="Timer" type="Timer" parent="Message"]
+wait_time = 3.0
+
+[connection signal="timeout" from="Message/Timer" to="Message" method="_on_timer_timeout"]
