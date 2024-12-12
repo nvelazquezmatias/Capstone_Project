@@ -14,8 +14,8 @@ func _process(delta: float) -> void:
 	# Check if the food reaches the bottom of the screen
 	if position.y > get_viewport_rect().size.y:
 		var main_game = get_tree().root.get_node("Main")
-		if main_game:  # Check if main node is set
-			main_game.lose_life()  # Call lose_life when the food goes off-screen
+		#if main_game:  # Check if main node is set
+			#main_game.lose_life()  # Call lose_life when the food goes off-screen
 		queue_free()  # Remove food from the scene
 
 # Function to handle collisions with the alien

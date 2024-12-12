@@ -25,9 +25,9 @@ func _on_timer_timeout() -> void:
 
 func _on_area_2d_area_entered(body: Area2D) -> void:
 	if body.is_in_group("toxic"):  # Check if the object is food
+		body.queue_free() #destroy toxic waste
 		foodeaten.emit(-1)
 	else:
-	
 		body.queue_free()  # Destroy food
 		foodeaten.emit(1)
 	#get_tree().current_scene.update_score(1) 
