@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://7p67sja0ohlg"]
+[gd_scene load_steps=10 format=3 uid="uid://7p67sja0ohlg"]
 
 [ext_resource type="AudioStream" uid="uid://bxdkdd0kkg0oo" path="res://Intro/space-rumble-29970.mp3" id="1_m3dtf"]
 [ext_resource type="Script" path="res://Farm Opening Scene/farm_openingscene.gd" id="1_vkcol"]
@@ -7,6 +7,8 @@
 [ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="4_5tfpk"]
 [ext_resource type="Texture2D" uid="uid://cfmw7ncfk4gt5" path="res://Menu/buttons asset pack 2/green_pressed_unpressed_overlined copy.png" id="4_g46o4"]
 [ext_resource type="Texture2D" uid="uid://bq6hmma7g1l3p" path="res://Dialogue /10_basic_message_boxes_by_CharlesGabriel.png" id="6_awlhf"]
+[ext_resource type="Script" path="res://Level2/OpeningScene/10_basic_message_boxes_by_charles_gabriel.gd" id="8_jlvxj"]
+[ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="9_vd7ah"]
 
 [node name="FarmOpeningscene" type="Node2D"]
 script = ExtResource("1_vkcol")
@@ -25,14 +27,15 @@ texture = ExtResource("2_lrow7")
 [node name="Label" type="Label" parent="."]
 offset_left = 64.0
 offset_top = 24.0
-offset_right = 725.0
-offset_bottom = 152.0
+offset_right = 388.0
+offset_bottom = 80.0
 theme_override_colors/font_color = Color(0.647059, 0.8, 0.431373, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("4_5tfpk")
-theme_override_font_sizes/font_size = 150
+theme_override_font_sizes/font_size = 90
 text = "Syracuse, NY"
 
 [node name="GreenPressedUnpressedOverlinedCopy" type="Sprite2D" parent="."]
@@ -53,24 +56,49 @@ offset_top = 141.595
 offset_right = 308.512
 offset_bottom = 165.595
 
-[node name="10BasicMessageBoxesByCharlesGabriel" type="Sprite2D" parent="."]
-position = Vector2(584, 240)
-scale = Vector2(2.94037, 2.09936)
-texture = ExtResource("6_awlhf")
-region_enabled = true
-region_rect = Rect2(321, 881, 318, 78)
-
 [node name="Label2" type="Label" parent="."]
-offset_left = 176.0
-offset_top = 184.0
-offset_right = 1008.0
-offset_bottom = 292.0
+offset_left = 320.0
+offset_top = 328.0
+offset_right = 1152.0
+offset_bottom = 436.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("3_1rsub")
 theme_override_font_sizes/font_size = 50
-text = "Fizbi crashes into earth and lands in Upstate, NY. He 
-must gather enough food and find his ship parts to go 
-back home."
+
+[node name="10BasicMessageBoxesByCharlesGabriel2" type="Sprite2D" parent="."]
+position = Vector2(600, 296)
+scale = Vector2(2.41915, 1.93767)
+texture = ExtResource("6_awlhf")
+region_enabled = true
+region_rect = Rect2(1, 641, 318, 78)
+script = ExtResource("8_jlvxj")
+
+[node name="Timer" type="Timer" parent="10BasicMessageBoxesByCharlesGabriel2"]
+wait_time = 3.0
+one_shot = true
+
+[node name="Label" type="Label" parent="10BasicMessageBoxesByCharlesGabriel2"]
+anchors_preset = -1
+anchor_left = -1.506
+anchor_top = -7.617
+anchor_right = -1.506
+anchor_bottom = -7.617
+offset_left = 346.63
+offset_top = 561.097
+offset_right = 603.63
+offset_bottom = 614.097
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("9_vd7ah")
+theme_override_font_sizes/font_size = 20
+text = "Fizbi's landed in Syracuse, NY!
+ Let's collect as much food as we can!
+"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="GreenPressedUnpressedOverlinedCopy/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="timeout" from="10BasicMessageBoxesByCharlesGabriel2/Timer" to="10BasicMessageBoxesByCharlesGabriel2" method="_on_timer_timeout"]

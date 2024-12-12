@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=3 uid="uid://dvnsjl3c3rcg2"]
+[gd_scene load_steps=72 format=3 uid="uid://dvnsjl3c3rcg2"]
 
 [ext_resource type="Texture2D" uid="uid://sg0qdwu35toc" path="res://Menu/Background_space_original.png" id="1_bumxr"]
 [ext_resource type="Script" path="res://Intro/intro.gd" id="1_i5n7p"]
@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://bq6hmma7g1l3p" path="res://Dialogue /10_basic_message_boxes_by_CharlesGabriel.png" id="3_u6hg2"]
 [ext_resource type="Texture2D" uid="uid://dsedd6giiv7tk" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas1.png" id="3_vt8x3"]
 [ext_resource type="Texture2D" uid="uid://bn1dvfcd3r12p" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas2.png" id="4_j83ma"]
-[ext_resource type="FontFile" uid="uid://on3nbqaj8okm" path="res://Menu/magofonts/mago2.ttf" id="4_lx0bh"]
 [ext_resource type="Texture2D" uid="uid://cmr3mbkeunm8y" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas3.png" id="5_v8sah"]
 [ext_resource type="Texture2D" uid="uid://cfmw7ncfk4gt5" path="res://Menu/buttons asset pack 2/green_pressed_unpressed_overlined copy.png" id="6_1s70y"]
 [ext_resource type="Texture2D" uid="uid://fp65o3neat0a" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas4.png" id="6_fluxd"]
@@ -17,7 +16,9 @@
 [ext_resource type="Texture2D" uid="uid://bqk46p5bp6koy" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas9.png" id="10_3rctl"]
 [ext_resource type="Texture2D" uid="uid://5urn2xwaelao" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas10.png" id="11_i0g6x"]
 [ext_resource type="Script" path="res://Intro/10_basic_message_boxes_by_charles_gabriel.gd" id="14_ygbao"]
+[ext_resource type="Texture2D" uid="uid://chm2qre80f7y6" path="res://Level2/file (23).png" id="16_co12i"]
 [ext_resource type="AudioStream" uid="uid://i3v38lpicgaw" path="res://Menu/Sound SFX/ui-click-43196.mp3" id="18_3hgq6"]
+[ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="19_dfrch"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3ncin"]
 atlas = ExtResource("2_a7kgt")
@@ -439,7 +440,7 @@ frame = 49
 frame_progress = 1.0
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-position = Vector2(564, 207)
+position = Vector2(592, 240)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_34dp6")
 autoplay = "default"
@@ -466,6 +467,11 @@ offset_bottom = 277.935
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="GreenPressedUnpressedOverlinedCopy/TextureButton"]
 stream = ExtResource("18_3hgq6")
 
+[node name="File(23)" type="Sprite2D" parent="GreenPressedUnpressedOverlinedCopy"]
+position = Vector2(-187.694, -20.1101)
+texture = ExtResource("16_co12i")
+region_enabled = true
+
 [node name="10BasicMessageBoxesByCharlesGabriel" type="Sprite2D" parent="."]
 position = Vector2(568, 152)
 scale = Vector2(3.11576, 3.04808)
@@ -475,7 +481,7 @@ region_rect = Rect2(1, 801, 318, 78)
 script = ExtResource("14_ygbao")
 
 [node name="Timer" type="Timer" parent="10BasicMessageBoxesByCharlesGabriel"]
-wait_time = 2.0
+wait_time = 4.0
 one_shot = true
 
 [node name="Label" type="Label" parent="10BasicMessageBoxesByCharlesGabriel"]
@@ -487,11 +493,12 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = 0
-theme_override_fonts/font = ExtResource("4_lx0bh")
-theme_override_font_sizes/font_size = 15
-text = "Resources on Fibzis planet were running low, so he was tasked with 
-finding more. What he didn’t know was that Earth had been devastated 
-by toxic nuclear waste."
+theme_override_fonts/font = ExtResource("19_dfrch")
+theme_override_font_sizes/font_size = 20
+text = "Fizbis planet is running low on food. Time to 
+find some more on Earth! 
+Little does he know...
+"
 
 [connection signal="pressed" from="GreenPressedUnpressedOverlinedCopy/TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="timeout" from="10BasicMessageBoxesByCharlesGabriel/Timer" to="10BasicMessageBoxesByCharlesGabriel" method="_on_timer_timeout"]

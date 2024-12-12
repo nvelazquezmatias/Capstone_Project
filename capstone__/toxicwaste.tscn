@@ -6,16 +6,14 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qi67o"]
 size = Vector2(61.25, 91.25)
 
-[node name="Node2D" type="Node2D"]
-
-[node name="ToxicWaste" type="Area2D" parent="."]
+[node name="ToxicWaste" type="Area2D" groups=["toxic"]]
 script = ExtResource("1_q7py5")
 
-[node name="Sprite2D" type="Sprite2D" parent="ToxicWaste"]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(197.5, 182.5)
 scale = Vector2(3.09375, 3.09375)
 texture = ExtResource("1_y7c8b")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ToxicWaste"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(198.375, 182.375)
 shape = SubResource("RectangleShape2D_qi67o")
