@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b80j8qk6xgfhg"]
 
-[ext_resource type="Script" path="res://toxic_waste.gd" id="1_q7py5"]
+[ext_resource type="Script" path="res://farm assets/farm food/toxic_waste.gd" id="1_q7py5"]
 [ext_resource type="Texture2D" uid="uid://bb70fjyx4stkf" path="res://farm assets/Toxins/waste.png" id="1_y7c8b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qi67o"]

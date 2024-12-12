@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dcjmc3inoug7t"]
+[gd_scene load_steps=12 format=3 uid="uid://dcjmc3inoug7t"]
 
 [ext_resource type="Script" path="res://farm assets/farmscene.gd" id="1_wd8vl"]
 [ext_resource type="Script" path="res://alien.gd" id="2_5lmj7"]
@@ -15,6 +15,12 @@ radius = 120.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_urlo7"]
 size = Vector2(748.237, 24.0996)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_krlju"]
+size = Vector2(20, 390.088)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ucl2o"]
+size = Vector2(20, 376.876)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_wd8vl")
@@ -62,8 +68,17 @@ metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FarmMorning/StaticBody2D"]
 position = Vector2(10.819, 195.631)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_urlo7")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="FarmMorning/StaticBody2D"]
+position = Vector2(-373.574, 4.69986)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_krlju")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="FarmMorning/StaticBody2D"]
+position = Vector2(374.846, -2.20622)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_ucl2o")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 offset_left = 48.0

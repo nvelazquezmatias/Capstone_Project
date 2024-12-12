@@ -21,7 +21,8 @@ func _ready():
 		"Leek": preload("res://farm assets/farm food/leek.tscn"),
 		"Cauliflower": preload("res://farm assets/farm food/cauliflower.tscn"),
 		"Eggplant": preload("res://farm assets/farm food/eggplant.tscn"),
-		"Corn": preload("res://farm assets/farm food/corn.tscn")
+		"Corn": preload("res://farm assets/farm food/corn.tscn"),
+		"Toxic": preload("res://farm assets/farm food/toxicwaste.tscn")
 	}
 
 func _on_FoodEaten(food_name: String):
@@ -35,7 +36,7 @@ func _on_FoodEaten(food_name: String):
 		game_over()
 
 func game_over():
-	print("Game Over! Final Score: " + str(score))
+	print("Game Over!" + str(score))
 
 func _on_timer_timeout() -> void:
 	$Message.hide()
@@ -62,5 +63,4 @@ func _on_alien_foodeaten(value) -> void:
 	#pass # Replace with function body.
 	$ProgressBar.value= score 
 	if score >= $ProgressBar.max_value: 
-		get_tree().change_scene_to_file("res://Farm Opening Scene/farm_openingscene.tscn") # Replace with function body.
-	
+		get_tree().change_scene_to_file("res://LevelUp/LevelUp.tscn") # Replace with function body.
