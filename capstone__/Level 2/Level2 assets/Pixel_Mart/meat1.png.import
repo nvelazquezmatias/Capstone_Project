@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/meat1.png.import
-uid="uid://dtu4bfres7hb"
+uid="uid://d0g2cnueo2sqb"
 path="res://.godot/imported/meat1.png-1a9764eb4570ecd08e1085355f8d067e.ctex"
-=======
-uid="uid://cjpvdn6m3s73k"
-path="res://.godot/imported/meat1.png-110bb3afdb19f9e707ac0dc7d2808e8e.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/meat1.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/meat1.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/meat1.png"
 dest_files=["res://.godot/imported/meat1.png-1a9764eb4570ecd08e1085355f8d067e.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/meat1.png"
-dest_files=["res://.godot/imported/meat1.png-110bb3afdb19f9e707ac0dc7d2808e8e.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/meat1.png.import
 
 [params]
 

@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/bell_pepper.png.import
-uid="uid://brybhbmg5t53d"
+uid="uid://0y0qu5xgvmuu"
 path="res://.godot/imported/bell_pepper.png-64ec4f64b2ba935188105a603e8eb12b.ctex"
-=======
-uid="uid://boh2mhm1wmmvi"
-path="res://.godot/imported/bell_pepper.png-374c9bce9e4a35bdf02e8bbfba0284fc.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/bell_pepper.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/bell_pepper.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/bell_pepper.png"
 dest_files=["res://.godot/imported/bell_pepper.png-64ec4f64b2ba935188105a603e8eb12b.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/bell_pepper.png"
-dest_files=["res://.godot/imported/bell_pepper.png-374c9bce9e4a35bdf02e8bbfba0284fc.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/bell_pepper.png.import
 
 [params]
 

@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/strawberry.png.import
-uid="uid://lmr68fqlwf8e"
+uid="uid://ccnoejgms018d"
 path="res://.godot/imported/strawberry.png-409ae346bec2ff21b7fd44aa9636ca2e.ctex"
-=======
-uid="uid://dqwiirjk3eorh"
-path="res://.godot/imported/strawberry.png-5314b859e01737778e4bb552c6b07f15.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/strawberry.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/strawberry.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/strawberry.png"
 dest_files=["res://.godot/imported/strawberry.png-409ae346bec2ff21b7fd44aa9636ca2e.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/strawberry.png"
-dest_files=["res://.godot/imported/strawberry.png-5314b859e01737778e4bb552c6b07f15.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/strawberry.png.import
 
 [params]
 

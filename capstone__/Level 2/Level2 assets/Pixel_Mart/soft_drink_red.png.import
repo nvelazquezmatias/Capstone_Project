@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/soft_drink_red.png.import
-uid="uid://dkajoxcht7fnt"
+uid="uid://cciafdwjwmowu"
 path="res://.godot/imported/soft_drink_red.png-31cd7203d4397ddee7300db80c10accb.ctex"
-=======
-uid="uid://b1ku8wt0bhyka"
-path="res://.godot/imported/soft_drink_red.png-c2b6d86f3bebef3541d03b0aa350114e.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/soft_drink_red.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/soft_drink_red.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/soft_drink_red.png"
 dest_files=["res://.godot/imported/soft_drink_red.png-31cd7203d4397ddee7300db80c10accb.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/soft_drink_red.png"
-dest_files=["res://.godot/imported/soft_drink_red.png-c2b6d86f3bebef3541d03b0aa350114e.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/soft_drink_red.png.import
 
 [params]
 

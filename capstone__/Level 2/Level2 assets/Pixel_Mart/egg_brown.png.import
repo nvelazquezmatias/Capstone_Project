@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/egg_brown.png.import
-uid="uid://bqwso2pn46alo"
+uid="uid://cbv6ypnong4un"
 path="res://.godot/imported/egg_brown.png-0d1586cb1e66191820d9e85a1f381adc.ctex"
-=======
-uid="uid://skem14rqcm30"
-path="res://.godot/imported/egg_brown.png-2e7ed9877c4729355f0b205c6d3cff68.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/egg_brown.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/egg_brown.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/egg_brown.png"
 dest_files=["res://.godot/imported/egg_brown.png-0d1586cb1e66191820d9e85a1f381adc.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/egg_brown.png"
-dest_files=["res://.godot/imported/egg_brown.png-2e7ed9877c4729355f0b205c6d3cff68.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/egg_brown.png.import
 
 [params]
 

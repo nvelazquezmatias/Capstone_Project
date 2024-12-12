@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/milk_bottle.png.import
-uid="uid://cpocsmrpqjthc"
+uid="uid://du8av0ur4ko3w"
 path="res://.godot/imported/milk_bottle.png-0738f0e59675d6af5c18cf61c4c6e540.ctex"
-=======
-uid="uid://c74b55cw1br7l"
-path="res://.godot/imported/milk_bottle.png-abf7f2fd3f1ea6624b719eba1e626ce6.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/milk_bottle.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/milk_bottle.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/milk_bottle.png"
 dest_files=["res://.godot/imported/milk_bottle.png-0738f0e59675d6af5c18cf61c4c6e540.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/milk_bottle.png"
-dest_files=["res://.godot/imported/milk_bottle.png-abf7f2fd3f1ea6624b719eba1e626ce6.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/milk_bottle.png.import
 
 [params]
 

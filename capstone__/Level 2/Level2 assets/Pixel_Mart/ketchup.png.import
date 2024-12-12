@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/ketchup.png.import
-uid="uid://bsqvkdrpfmpfd"
+uid="uid://1vfm7pfvvf4"
 path="res://.godot/imported/ketchup.png-5e1c037640464321e6b3e65bb86727e7.ctex"
-=======
-uid="uid://cdy5jd0eq4u0m"
-path="res://.godot/imported/ketchup.png-b2f8066bba61c52d948252164349a9ac.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/ketchup.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/ketchup.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/ketchup.png"
 dest_files=["res://.godot/imported/ketchup.png-5e1c037640464321e6b3e65bb86727e7.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/ketchup.png"
-dest_files=["res://.godot/imported/ketchup.png-b2f8066bba61c52d948252164349a9ac.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/ketchup.png.import
 
 [params]
 

@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/watermelon2.png.import
-uid="uid://b07poqmbipj6e"
+uid="uid://dbl56kjibuabx"
 path="res://.godot/imported/watermelon2.png-08f902c45b1c667d1c7e67de22e1c1aa.ctex"
-=======
-uid="uid://c38g32g3m05wy"
-path="res://.godot/imported/watermelon2.png-3afe7dc139c5cc638cb1a7650b26a396.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/watermelon2.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/watermelon2.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/watermelon2.png"
 dest_files=["res://.godot/imported/watermelon2.png-08f902c45b1c667d1c7e67de22e1c1aa.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/watermelon2.png"
-dest_files=["res://.godot/imported/watermelon2.png-3afe7dc139c5cc638cb1a7650b26a396.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/watermelon2.png.import
 
 [params]
 
