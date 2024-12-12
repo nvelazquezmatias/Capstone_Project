@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/sliced_bread_p.png.import
-uid="uid://djnpe7xfk7h27"
+uid="uid://bsr0q7tbf4ts8"
 path="res://.godot/imported/sliced_bread_p.png-18098b186b09d33250bcb4b4576d515a.ctex"
-=======
-uid="uid://b01rxvwh31mi8"
-path="res://.godot/imported/sliced_bread_p.png-60fa87db98c79ef47532122d4f6b50a5.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/sliced_bread_p.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/sliced_bread_p.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/sliced_bread_p.png"
 dest_files=["res://.godot/imported/sliced_bread_p.png-18098b186b09d33250bcb4b4576d515a.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/sliced_bread_p.png"
-dest_files=["res://.godot/imported/sliced_bread_p.png-60fa87db98c79ef47532122d4f6b50a5.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/sliced_bread_p.png.import
 
 [params]
 

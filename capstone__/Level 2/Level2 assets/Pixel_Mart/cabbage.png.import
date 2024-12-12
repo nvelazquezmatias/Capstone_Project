@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/cabbage.png.import
-uid="uid://cg785mngw5yys"
+uid="uid://ctskttd3mnult"
 path="res://.godot/imported/cabbage.png-1787d8cbb48566f4e85711aa87634e9d.ctex"
-=======
-uid="uid://v2pojs4rwxfo"
-path="res://.godot/imported/cabbage.png-3fe69428b7982ee54b8947e4ffb3192d.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/cabbage.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/cabbage.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/cabbage.png"
 dest_files=["res://.godot/imported/cabbage.png-1787d8cbb48566f4e85711aa87634e9d.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/cabbage.png"
-dest_files=["res://.godot/imported/cabbage.png-3fe69428b7982ee54b8947e4ffb3192d.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/cabbage.png.import
 
 [params]
 

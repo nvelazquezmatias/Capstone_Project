@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/wine_white.png.import
-uid="uid://cbbrh38g2y1s1"
+uid="uid://6hmephchhm7u"
 path="res://.godot/imported/wine_white.png-47755830d06ca2ca7f7ee3311188d8f0.ctex"
-=======
-uid="uid://bhnh33okhs1qd"
-path="res://.godot/imported/wine_white.png-24322043654a62bfb800c2c2bb5a1eb6.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/wine_white.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/wine_white.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/wine_white.png"
 dest_files=["res://.godot/imported/wine_white.png-47755830d06ca2ca7f7ee3311188d8f0.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/wine_white.png"
-dest_files=["res://.godot/imported/wine_white.png-24322043654a62bfb800c2c2bb5a1eb6.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/wine_white.png.import
 
 [params]
 

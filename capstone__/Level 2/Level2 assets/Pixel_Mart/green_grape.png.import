@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/green_grape.png.import
-uid="uid://cqjoay4o5bglp"
+uid="uid://bvm3opcox81fr"
 path="res://.godot/imported/green_grape.png-666092a011d765e9a4fa7a84a4f70516.ctex"
-=======
-uid="uid://c2aa3ohbqd4y8"
-path="res://.godot/imported/green_grape.png-f43522ee84ac0b486e4dc7b51003fa78.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/green_grape.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/green_grape.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/green_grape.png"
 dest_files=["res://.godot/imported/green_grape.png-666092a011d765e9a4fa7a84a4f70516.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/green_grape.png"
-dest_files=["res://.godot/imported/green_grape.png-f43522ee84ac0b486e4dc7b51003fa78.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/green_grape.png.import
 
 [params]
 

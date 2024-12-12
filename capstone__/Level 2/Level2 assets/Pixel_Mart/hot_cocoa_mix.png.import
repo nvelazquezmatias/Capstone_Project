@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/hot_cocoa_mix.png.import
-uid="uid://dq1y608ls8wgu"
+uid="uid://c21kw80cj6lmc"
 path="res://.godot/imported/hot_cocoa_mix.png-6afc54abff15fb1254c121f8ad1bb467.ctex"
-=======
-uid="uid://c8s6skuhg2mlr"
-path="res://.godot/imported/hot_cocoa_mix.png-015e88a4aeac92fe5c2f7645397f0790.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/hot_cocoa_mix.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/hot_cocoa_mix.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/hot_cocoa_mix.png"
 dest_files=["res://.godot/imported/hot_cocoa_mix.png-6afc54abff15fb1254c121f8ad1bb467.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/hot_cocoa_mix.png"
-dest_files=["res://.godot/imported/hot_cocoa_mix.png-015e88a4aeac92fe5c2f7645397f0790.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/hot_cocoa_mix.png.import
 
 [params]
 

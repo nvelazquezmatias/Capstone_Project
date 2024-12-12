@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/green_apple.png.import
-uid="uid://6sl2bfd1gmt8"
+uid="uid://de1ulps0a0egp"
 path="res://.godot/imported/green_apple.png-db0b9a70f4ca27c1d9c4050242a60a65.ctex"
-=======
-uid="uid://bso54v1g0shkf"
-path="res://.godot/imported/green_apple.png-7ab37e1a87ad40f33d4ae1be62e55555.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/green_apple.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/green_apple.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/green_apple.png"
 dest_files=["res://.godot/imported/green_apple.png-db0b9a70f4ca27c1d9c4050242a60a65.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/green_apple.png"
-dest_files=["res://.godot/imported/green_apple.png-7ab37e1a87ad40f33d4ae1be62e55555.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/green_apple.png.import
 
 [params]
 

@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/tuna_can.png.import
-uid="uid://b55rievrxe3sn"
+uid="uid://dnh5fa8vakci0"
 path="res://.godot/imported/tuna_can.png-be46b1b449c93e4e55ca566c436fd001.ctex"
-=======
-uid="uid://cs2xihh0wkeac"
-path="res://.godot/imported/tuna_can.png-0bf773891488700cd91f0b305697f67b.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/tuna_can.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/tuna_can.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/tuna_can.png"
 dest_files=["res://.godot/imported/tuna_can.png-be46b1b449c93e4e55ca566c436fd001.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/tuna_can.png"
-dest_files=["res://.godot/imported/tuna_can.png-0bf773891488700cd91f0b305697f67b.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/tuna_can.png.import
 
 [params]
 

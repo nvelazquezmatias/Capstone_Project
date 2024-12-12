@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/mustard.png.import
-uid="uid://cvjxqw56i2tya"
+uid="uid://cqd760hn2neuo"
 path="res://.godot/imported/mustard.png-b200bc78565c0e8280d4541e1b72a913.ctex"
-=======
-uid="uid://dkymn5mw5lcs4"
-path="res://.godot/imported/mustard.png-8f47c53dcf4d204e9f684075ef7eb523.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/mustard.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/mustard.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/mustard.png"
 dest_files=["res://.godot/imported/mustard.png-b200bc78565c0e8280d4541e1b72a913.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/mustard.png"
-dest_files=["res://.godot/imported/mustard.png-8f47c53dcf4d204e9f684075ef7eb523.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/mustard.png.import
 
 [params]
 

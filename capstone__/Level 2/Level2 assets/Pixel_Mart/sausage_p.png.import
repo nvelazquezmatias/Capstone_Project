@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/sausage_p.png.import
-uid="uid://dnpwuch8jw1w2"
+uid="uid://c5d37i7sx8b6n"
 path="res://.godot/imported/sausage_p.png-1dc4cd1b15dd5d43123667a9434e43f0.ctex"
-=======
-uid="uid://bfk3ypuou1h1o"
-path="res://.godot/imported/sausage_p.png-0dc9a98fad3349db4f38015cc3173356.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/sausage_p.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/sausage_p.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/sausage_p.png"
 dest_files=["res://.godot/imported/sausage_p.png-1dc4cd1b15dd5d43123667a9434e43f0.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/sausage_p.png"
-dest_files=["res://.godot/imported/sausage_p.png-0dc9a98fad3349db4f38015cc3173356.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/sausage_p.png.import
 
 [params]
 

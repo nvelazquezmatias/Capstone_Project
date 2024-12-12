@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/banana.png.import
-uid="uid://dq2nd28yafrw6"
+uid="uid://ppf3iblv070j"
 path="res://.godot/imported/banana.png-a4be6979e4edbb91540b718032ca6cf8.ctex"
-=======
-uid="uid://hl22y2r1egwd"
-path="res://.godot/imported/banana.png-1690e004547a62921933217dc8d5b642.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/banana.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/banana.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/banana.png"
 dest_files=["res://.godot/imported/banana.png-a4be6979e4edbb91540b718032ca6cf8.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/banana.png"
-dest_files=["res://.godot/imported/banana.png-1690e004547a62921933217dc8d5b642.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/banana.png.import
 
 [params]
 

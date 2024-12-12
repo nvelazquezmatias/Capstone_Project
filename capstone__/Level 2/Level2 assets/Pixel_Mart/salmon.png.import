@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/salmon.png.import
-uid="uid://d2qxavoa37jc2"
+uid="uid://byxq0h8hvweh8"
 path="res://.godot/imported/salmon.png-a18d138fe2f4907610415e342b82544c.ctex"
-=======
-uid="uid://wg04q2lgr7rj"
-path="res://.godot/imported/salmon.png-533cc390b867716d47367d0a5793d9a4.ctex"
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/salmon.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:capstone__/Level 2/Level2 assets/Pixel_Mart/salmon.png.import
 source_file="res://Level 2/Level2 assets/Pixel_Mart/salmon.png"
 dest_files=["res://.godot/imported/salmon.png-a18d138fe2f4907610415e342b82544c.ctex"]
-=======
-source_file="res://Level2/Pixel_Mart/salmon.png"
-dest_files=["res://.godot/imported/salmon.png-533cc390b867716d47367d0a5793d9a4.ctex"]
->>>>>>> 497a79a478652a2d25a50970531331a4ac0dbb35:capstone__/Level2/Pixel_Mart/salmon.png.import
 
 [params]
 
