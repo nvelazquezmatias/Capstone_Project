@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgp184fblg4iv"]
+
+[ext_resource type="Script" path="res://Level 2/Level2 assets/bellpepper.gd" id="1_mo6jm"]
+[ext_resource type="Texture2D" uid="uid://brybhbmg5t53d" path="res://Level 2/Level2 assets/Pixel_Mart/bell_pepper.png" id="2_iivrn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3c6m8"]
+radius = 31.8231
+height = 104.636
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_mo6jm")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(433, 239)
+scale = Vector2(3.53125, 3.53125)
+texture = ExtResource("2_iivrn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(433, 239)
+rotation = -2.36143
+shape = SubResource("CapsuleShape2D_3c6m8")
