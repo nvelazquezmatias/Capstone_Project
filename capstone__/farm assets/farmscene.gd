@@ -54,6 +54,8 @@ func _on_spawntimer_timeout() -> void:
 		food.position = Vector2(randf_range(0, get_viewport().get_visible_rect().size.x), -200)
 		self.add_child(food)
 		#food.connect("food_eaten", self, "_on_FoodEaten")
+		match food_type:
+			"Carrot": food.point_value = 2
 	else:
 		print("Error: Food instance is not a Node2D!")
 
