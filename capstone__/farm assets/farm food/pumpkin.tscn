@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5tdybf4kqi4r"]
+[gd_scene load_steps=5 format=3 uid="uid://c5tdybf4kqi4r"]
 
 [ext_resource type="Script" path="res://farm assets/farm food/pumpkin.gd" id="1_6vbn0"]
 [ext_resource type="Texture2D" uid="uid://trnmukvj41ua" path="res://farm assets/farm food/Pumpkin.png" id="2_usnfw"]
@@ -7,15 +7,26 @@
 radius = 28.0
 height = 76.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ssww"]
+size = Vector2(17, 648)
+
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_6vbn0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(233.5, 226.5)
 scale = Vector2(2.28125, 2.28125)
 texture = ExtResource("2_usnfw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(233, 228)
 rotation = -1.5708
 shape = SubResource("CapsuleShape2D_ckbx1")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1159.5, 324)
+shape = SubResource("RectangleShape2D_1ssww")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-9, 319)
+shape = SubResource("RectangleShape2D_1ssww")

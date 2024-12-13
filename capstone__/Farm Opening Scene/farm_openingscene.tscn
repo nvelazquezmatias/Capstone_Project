@@ -4,9 +4,9 @@
 [ext_resource type="Script" path="res://Farm Opening Scene/farm_openingscene.gd" id="1_vkcol"]
 [ext_resource type="Texture2D" uid="uid://buix74tl8cg48" path="res://Farm Opening Scene/pic.jpg" id="2_lrow7"]
 [ext_resource type="FontFile" uid="uid://on3nbqaj8okm" path="res://Menu/magofonts/mago2.ttf" id="3_1rsub"]
-[ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="4_5tfpk"]
-[ext_resource type="Texture2D" uid="uid://cfmw7ncfk4gt5" path="res://Menu/buttons asset pack 2/green_pressed_unpressed_overlined copy.png" id="4_g46o4"]
+[ext_resource type="Texture2D" uid="uid://cfmw7ncfk4gt5" path="res://Buttons/buttons asset pack 2/green_pressed_unpressed_overlined copy.png" id="4_g46o4"]
 [ext_resource type="Texture2D" uid="uid://bq6hmma7g1l3p" path="res://Dialogue /10_basic_message_boxes_by_CharlesGabriel.png" id="6_awlhf"]
+[ext_resource type="Script" path="res://Farm Opening Scene/10_basic_message_boxes_by_charles_gabriel_2.gd" id="8_6k55s"]
 [ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="9_vd7ah"]
 
 [node name="FarmOpeningscene" type="Node2D"]
@@ -25,16 +25,16 @@ texture = ExtResource("2_lrow7")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 64.0
-offset_top = 24.0
-offset_right = 388.0
-offset_bottom = 80.0
+offset_top = 16.0
+offset_right = 570.0
+offset_bottom = 135.0
 theme_override_colors/font_color = Color(0.647059, 0.8, 0.431373, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("4_5tfpk")
-theme_override_font_sizes/font_size = 90
+theme_override_fonts/font = ExtResource("3_1rsub")
+theme_override_font_sizes/font_size = 150
 text = "Syracuse, NY"
 
 [node name="GreenPressedUnpressedOverlinedCopy" type="Sprite2D" parent="."]
@@ -71,6 +71,7 @@ scale = Vector2(2.41915, 1.93767)
 texture = ExtResource("6_awlhf")
 region_enabled = true
 region_rect = Rect2(1, 641, 318, 78)
+script = ExtResource("8_6k55s")
 
 [node name="Timer" type="Timer" parent="10BasicMessageBoxesByCharlesGabriel2"]
 wait_time = 3.0

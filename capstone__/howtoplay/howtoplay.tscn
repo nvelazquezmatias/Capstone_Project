@@ -1,10 +1,9 @@
-[gd_scene load_steps=9 format=4 uid="uid://c43rswhmy2sxd"]
+[gd_scene load_steps=8 format=4 uid="uid://c43rswhmy2sxd"]
 
 [ext_resource type="Script" path="res://howtoplay/howtoplay.gd" id="1_s832o"]
-[ext_resource type="Texture2D" uid="uid://rxqxjucu7pv7" path="res://howtoplay/569-5697892_pixel-art-paper-scroll-transparent-hd-png-download (1).png" id="3_5nvmr"]
-[ext_resource type="Script" path="res://howtoplay/569_5697892_pixel_art_paper_scroll_transparent_hd_png_download(1).gd" id="4_if1yf"]
+[ext_resource type="Texture2D" uid="uid://bj8no1vrnerkw" path="res://howtoplay/_ (2).png" id="3_v6i8u"]
 [ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="4_uvruh"]
-[ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Menu/buttons asset pack/GreenButtons.png" id="4_vw2v6"]
+[ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Buttons/buttons asset pack/GreenButtons.png" id="4_vw2v6"]
 [ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="5_vk2pv"]
 
 [sub_resource type="AudioStreamMP3" id="AudioStreamMP3_wqtie"]
@@ -25,18 +24,7 @@ autoplay = true
 position = Vector2(576.5, 326)
 scale = Vector2(1.5856, 1.17021)
 texture = SubResource("CompressedTexture2D_qq7fk")
-
-[node name="Label" type="Label" parent="Pic"]
-offset_left = -101.0
-offset_top = -101.0
-offset_right = 171.0
-offset_bottom = 27.0
-theme_override_colors/font_color = Color(0.738699, 0.88118, 0.53676, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("4_uvruh")
-theme_override_font_sizes/font_size = 75
-text = "CONTINUE "
+metadata/_edit_lock_ = true
 
 [node name="TextureButton" type="TextureButton" parent="."]
 offset_left = 1040.0
@@ -51,54 +39,41 @@ texture = ExtResource("4_vw2v6")
 region_enabled = true
 region_rect = Rect2(165, 88, 15, 15)
 
-[node name="569-5697892Pixel-art-paper-scroll-transparent-hd-png-download(1)" type="Sprite2D" parent="."]
-position = Vector2(608, 320)
-scale = Vector2(0.698547, 0.698547)
-texture = ExtResource("3_5nvmr")
-script = ExtResource("4_if1yf")
+[node name="(2)" type="Sprite2D" parent="."]
+position = Vector2(616, 320)
+scale = Vector2(0.779891, 0.600814)
+texture = ExtResource("3_v6i8u")
 
-[node name="Label" type="Label" parent="569-5697892Pixel-art-paper-scroll-transparent-hd-png-download(1)"]
+[node name="Label" type="Label" parent="."]
 anchors_preset = -1
 anchor_left = -0.512
 anchor_top = 0.018
 anchor_right = -0.512
 anchor_bottom = 0.018
-offset_left = 234.32
-offset_top = -338.118
-offset_right = 658.32
-offset_bottom = -269.118
+offset_left = 416.0
+offset_top = 120.0
+offset_right = 840.0
+offset_bottom = 189.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_uvruh")
 theme_override_font_sizes/font_size = 80
-text = "HOW TO PLAY "
+text = "Instructions"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="RichTextLabel" type="RichTextLabel" parent="569-5697892Pixel-art-paper-scroll-transparent-hd-png-download(1)"]
-offset_left = -183.0
-offset_top = -240.0
-offset_right = 206.0
-offset_bottom = 287.0
+[node name="RichTextLabel" type="RichTextLabel" parent="Label"]
+offset_left = 16.0
+offset_top = 88.0
+offset_right = 405.0
+offset_bottom = 328.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("5_vk2pv")
 theme_override_font_sizes/normal_font_size = 40
-text = "Collect Food: Gather food to fill your bag
+text = "Use < and > to collect food and reach 100%
 
-Food Bar: Fills as you collect 
-food
+Avoid toxic waste
 
-Penalty: Toxic waste decreases 
-your score
-
-Avoid Toxic Waste: Dont let 
-falling toxic waste hit you!
-
-Level Up: Fill half the bag to 
-progress and find spaceship 
-pieces"
-
-[node name="Timer" type="Timer" parent="569-5697892Pixel-art-paper-scroll-transparent-hd-png-download(1)"]
-wait_time = 5.0
-one_shot = true
+Fill your bag to unlock new locations!
+"
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
-[connection signal="timeout" from="569-5697892Pixel-art-paper-scroll-transparent-hd-png-download(1)/Timer" to="569-5697892Pixel-art-paper-scroll-transparent-hd-png-download(1)" method="_on_timer_timeout"]

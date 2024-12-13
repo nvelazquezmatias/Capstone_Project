@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b2pldl5h6g2v8" path="res://Level2/Level 2/OpeningScene/Intro.jpg" id="1_12uov"]
 [ext_resource type="Script" path="res://Level2/Level 2/OpeningScene/level_2_opening_scene.gd" id="1_vhrbc"]
-[ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Menu/buttons asset pack/GreenButtons.png" id="2_1oejs"]
+[ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Buttons/buttons asset pack/GreenButtons.png" id="2_1oejs"]
 [ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="3_qaj14"]
 [ext_resource type="Texture2D" uid="uid://bq6hmma7g1l3p" path="res://Dialogue /10_basic_message_boxes_by_CharlesGabriel.png" id="5_xh55h"]
 [ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="6_xxvc6"]

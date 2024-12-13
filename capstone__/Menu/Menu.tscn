@@ -48,40 +48,35 @@ position = Vector2(470.456, 298.55)
 scale = Vector2(4.80625, 4.80625)
 stream = ExtResource("8_gs3s0")
 
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 588.0
-offset_top = -318.0
-offset_right = 628.0
-offset_bottom = -278.0
-
-[node name="BackgroundSpaceOriginal" type="Sprite2D" parent="Control"]
-position = Vector2(-7.00006, 646)
+[node name="BackgroundSpaceOriginal" type="Sprite2D" parent="."]
+position = Vector2(581, 328)
 scale = Vector2(4.53276, 4.43104)
 texture = ExtResource("1_cokiq")
+metadata/_edit_lock_ = true
 
-[node name="Label" type="Label" parent="Control"]
+[node name="Label" type="Label" parent="."]
 material = SubResource("ShaderMaterial_d6erm")
-layout_mode = 1
 anchors_preset = -1
 anchor_left = -3.255
 anchor_top = -7.401
 anchor_right = -3.255
 anchor_bottom = -7.401
-offset_left = -91.8
-offset_top = 791.04
-offset_right = 364.2
-offset_bottom = 871.04
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = -10
+offset_left = 264.0
+offset_top = 160.0
+offset_right = 948.0
+offset_bottom = 279.0
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 0
 theme_override_fonts/font = ExtResource("6_sfxno")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 150
 text = "START GAME "
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(579, 322)
-scale = Vector2(0.721519, 0.721519)
+position = Vector2(584, 328)
+scale = Vector2(0.858537, 0.858537)
 sprite_frames = SubResource("SpriteFrames_paig5")
 autoplay = "default"
 frame_progress = 0.893552
@@ -93,10 +88,10 @@ anchor_left = -2.583
 anchor_top = -7.252
 anchor_right = -2.583
 anchor_bottom = -7.252
-offset_left = 292.114
-offset_top = 1574.7
-offset_right = 527.114
-offset_bottom = 1760.7
+offset_left = 314.932
+offset_top = 1575.79
+offset_right = 549.932
+offset_bottom = 1761.79
 script = ExtResource("7_p2a5h")
 
 [connection signal="pressed" from="AnimatedSprite2D/TextureButton" to="." method="_on_texture_button_pressed"]
