@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3mep4r4spdx5"]
+[gd_scene load_steps=5 format=3 uid="uid://b3mep4r4spdx5"]
 
 [ext_resource type="Script" path="res://farm assets/farm food/carrot.gd" id="1_4sq17"]
 [ext_resource type="Texture2D" uid="uid://bof181mmglk02" path="res://farm assets/farm food/Carrot.png" id="2_h2nwd"]
@@ -6,6 +6,9 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_43h4y"]
 radius = 24.0237
 height = 108.55
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6x757"]
+size = Vector2(46.375, 669)
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_4sq17")
@@ -19,3 +22,14 @@ texture = ExtResource("2_h2nwd")
 position = Vector2(8, 8.00003)
 rotation = 0.825541
 shape = SubResource("CapsuleShape2D_43h4y")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(576, 328)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-599.188, 0)
+shape = SubResource("RectangleShape2D_6x757")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(600, 0)
+shape = SubResource("RectangleShape2D_6x757")

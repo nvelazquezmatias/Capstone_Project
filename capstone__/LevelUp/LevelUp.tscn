@@ -6,7 +6,7 @@
 [ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="4_dh2ti"]
 [ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="5_asb8u"]
 [ext_resource type="FontFile" uid="uid://on3nbqaj8okm" path="res://Menu/magofonts/mago2.ttf" id="6_qh648"]
-[ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Menu/buttons asset pack/GreenButtons.png" id="7_jsoig"]
+[ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Buttons/buttons asset pack/GreenButtons.png" id="7_jsoig"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_de0hp"]
 atlas = ExtResource("3_3fpu2")

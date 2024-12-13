@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=3 uid="uid://dvnsjl3c3rcg2"]
+[gd_scene load_steps=71 format=3 uid="uid://dvnsjl3c3rcg2"]
 
 [ext_resource type="Texture2D" uid="uid://sg0qdwu35toc" path="res://Menu/Background_space_original.png" id="1_bumxr"]
 [ext_resource type="Script" path="res://Intro/intro.gd" id="1_i5n7p"]
@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dsedd6giiv7tk" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas1.png" id="3_vt8x3"]
 [ext_resource type="Texture2D" uid="uid://bn1dvfcd3r12p" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas2.png" id="4_j83ma"]
 [ext_resource type="Texture2D" uid="uid://cmr3mbkeunm8y" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas3.png" id="5_v8sah"]
-[ext_resource type="Texture2D" uid="uid://cfmw7ncfk4gt5" path="res://Menu/buttons asset pack 2/green_pressed_unpressed_overlined copy.png" id="6_1s70y"]
+[ext_resource type="Texture2D" uid="uid://cfmw7ncfk4gt5" path="res://Buttons/buttons asset pack 2/green_pressed_unpressed_overlined copy.png" id="6_1s70y"]
 [ext_resource type="Texture2D" uid="uid://fp65o3neat0a" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas4.png" id="6_fluxd"]
 [ext_resource type="Texture2D" uid="uid://c0ggyt1wqsmgs" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas5.png" id="7_0wnkw"]
 [ext_resource type="Texture2D" uid="uid://c3a3ttpl87vo3" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas6.png" id="8_0c1n4"]
@@ -16,7 +16,6 @@
 [ext_resource type="Texture2D" uid="uid://bqk46p5bp6koy" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas9.png" id="10_3rctl"]
 [ext_resource type="Texture2D" uid="uid://5urn2xwaelao" path="res://Intro/Free Pixel Art Explosions/PNG/Explosion_gas/Explosion_gas10.png" id="11_i0g6x"]
 [ext_resource type="Script" path="res://Intro/10_basic_message_boxes_by_charles_gabriel.gd" id="14_ygbao"]
-[ext_resource type="Texture2D" uid="uid://chm2qre80f7y6" path="res://Level2/file (23).png" id="16_co12i"]
 [ext_resource type="AudioStream" uid="uid://i3v38lpicgaw" path="res://Menu/Sound SFX/ui-click-43196.mp3" id="18_3hgq6"]
 [ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="19_dfrch"]
 
@@ -467,28 +466,29 @@ offset_bottom = 277.935
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="GreenPressedUnpressedOverlinedCopy/TextureButton"]
 stream = ExtResource("18_3hgq6")
 
-[node name="File(23)" type="Sprite2D" parent="GreenPressedUnpressedOverlinedCopy"]
-position = Vector2(-187.694, -20.1101)
-texture = ExtResource("16_co12i")
-region_enabled = true
-
 [node name="10BasicMessageBoxesByCharlesGabriel" type="Sprite2D" parent="."]
-position = Vector2(568, 152)
-scale = Vector2(3.11576, 3.04808)
+position = Vector2(584, 288)
+scale = Vector2(2.81598, 2.75481)
 texture = ExtResource("3_u6hg2")
 region_enabled = true
 region_rect = Rect2(1, 801, 318, 78)
 script = ExtResource("14_ygbao")
 
 [node name="Timer" type="Timer" parent="10BasicMessageBoxesByCharlesGabriel"]
-wait_time = 4.0
+wait_time = 3.0
 one_shot = true
+autostart = true
 
 [node name="Label" type="Label" parent="10BasicMessageBoxesByCharlesGabriel"]
-offset_left = -148.92
-offset_top = -28.8706
-offset_right = 158.08
-offset_bottom = 39.1294
+anchors_preset = -1
+anchor_left = -0.073
+anchor_top = -0.139
+anchor_right = -0.073
+anchor_bottom = -0.139
+offset_left = -124.514
+offset_top = -18.1981
+offset_right = 182.486
+offset_bottom = 49.8019
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)

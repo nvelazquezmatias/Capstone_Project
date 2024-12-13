@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://upkqr1vvvoj5"
+path="res://.godot/imported/green_pressed_unpressed_overlined.png-e41e6f5c3007b98d3971c2099b64a7ef.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Buttons/buttons asset pack/green_pressed_unpressed_overlined.png"
+dest_files=["res://.godot/imported/green_pressed_unpressed_overlined.png-e41e6f5c3007b98d3971c2099b64a7ef.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

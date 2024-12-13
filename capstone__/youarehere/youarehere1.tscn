@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://cb12vrge6gbks"]
+
+[ext_resource type="Texture2D" uid="uid://c6j7eg7uuyvbp" path="res://youarehere/Alpha pattern #47232.jpeg" id="1_kvtch"]
+[ext_resource type="Texture2D" uid="uid://c7j0a2d385yd1" path="res://youarehere/Download Pixel art illustration UFO_ Pixelated UFO. Farm UFO space alien pixelated for the pixel art game and icon for website and video game. old school retro.png" id="2_igaf6"]
+[ext_resource type="Texture2D" uid="uid://b8o7408g70rby" path="res://youarehere/file (23).png" id="3_tsaki"]
+[ext_resource type="Texture2D" uid="uid://djdabs2vwplil" path="res://youarehere/file (28).png" id="4_26tmu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8hfli"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_igaf6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_igaf6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_igaf6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_igaf6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_igaf6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Youarehere1" type="Node2D"]
+
+[node name="AlphaPattern#47232" type="Sprite2D" parent="."]
+position = Vector2(584, 319)
+scale = Vector2(2.24184, 2.58871)
+texture = ExtResource("1_kvtch")
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1448, 280)
+scale = Vector2(0.444293, 0.444293)
+sprite_frames = SubResource("SpriteFrames_8hfli")
+frame_progress = 0.525572
+
+[node name="File(23)" type="Sprite2D" parent="."]
+position = Vector2(1640, 240)
+texture = ExtResource("3_tsaki")
+
+[node name="File(28)" type="Sprite2D" parent="."]
+position = Vector2(344, 144)
+scale = Vector2(0.219049, 0.219049)
+texture = ExtResource("4_26tmu")

@@ -38,10 +38,6 @@ func _on_FoodEaten(food_name: String):
 func game_over():
 	print("Game Over!" + str(score))
 
-func _on_timer_timeout() -> void:
-	$Message.hide()
-
-
 func _on_spawntimer_timeout() -> void:
 	print("spawnvegetables")
 	# Choose a random food type

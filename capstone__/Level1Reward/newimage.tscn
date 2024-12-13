@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://c3m6tur4wd7pv" path="res://Level1Reward/file (24).png" id="4_jco11"]
 [ext_resource type="Texture2D" uid="uid://bara0wpv8cxx1" path="res://LevelUp/SpaceshipKit.png" id="5_ih1ix"]
 [ext_resource type="Texture2D" uid="uid://qmm38dp3uwkr" path="res://Level1Reward/stars.png" id="5_lhxx3"]
-[ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Menu/buttons asset pack/GreenButtons.png" id="6_bc7tq"]
+[ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Buttons/buttons asset pack/GreenButtons.png" id="6_bc7tq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kcdj6"]
 atlas = ExtResource("5_lhxx3")
