@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://7p67sja0ohlg"]
+[gd_scene load_steps=9 format=3 uid="uid://7p67sja0ohlg"]
 
 [ext_resource type="AudioStream" uid="uid://bxdkdd0kkg0oo" path="res://Intro/space-rumble-29970.mp3" id="1_m3dtf"]
 [ext_resource type="Script" path="res://Farm Opening Scene/farm_openingscene.gd" id="1_vkcol"]
@@ -7,7 +7,6 @@
 [ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="4_5tfpk"]
 [ext_resource type="Texture2D" uid="uid://cfmw7ncfk4gt5" path="res://Menu/buttons asset pack 2/green_pressed_unpressed_overlined copy.png" id="4_g46o4"]
 [ext_resource type="Texture2D" uid="uid://bq6hmma7g1l3p" path="res://Dialogue /10_basic_message_boxes_by_CharlesGabriel.png" id="6_awlhf"]
-[ext_resource type="Script" path="res://Level2/OpeningScene/10_basic_message_boxes_by_charles_gabriel.gd" id="8_jlvxj"]
 [ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="9_vd7ah"]
 
 [node name="FarmOpeningscene" type="Node2D"]
@@ -72,7 +71,6 @@ scale = Vector2(2.41915, 1.93767)
 texture = ExtResource("6_awlhf")
 region_enabled = true
 region_rect = Rect2(1, 641, 318, 78)
-script = ExtResource("8_jlvxj")
 
 [node name="Timer" type="Timer" parent="10BasicMessageBoxesByCharlesGabriel2"]
 wait_time = 3.0
