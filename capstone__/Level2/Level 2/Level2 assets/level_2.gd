@@ -38,7 +38,7 @@ func _on_timer_timeout() -> void:
 	$Message.hide()
 
 
-func _on_spawntimer_timeout() -> void:
+func _on_spawn_timer_timeout() -> void:
 	print("spawnvegetables")
 	# Choose a random food type
 	var food_type = food_scene_dict.keys()[randi() % food_scene_dict.size()]
@@ -54,21 +54,9 @@ func _on_spawntimer_timeout() -> void:
 		print("Error: Food instance is not a Node2D!")
 
 
-func _on_alien_foodeaten(value) -> void:
+func _on_character_body_2d_foodeaten(value) -> void:
 	score += value  
 	#pass # Replace with function body.
 	$ProgressBar.value= score 
 	if score >= $ProgressBar.max_value: 
 		get_tree().change_scene_to_file("res://LevelUp/LevelUp.tscn") # Replace with function body.
-
-
-func _on_character_body_2d_foodeaten() -> void:
-	pass # Replace with function body.
-
-
-func _on_area_2d_area_entered(area: Area2D) -> void:
-	pass # Replace with function body.
-
-
-func _on_spawn_timer_timeout() -> void:
-	pass # Replace with function body.
