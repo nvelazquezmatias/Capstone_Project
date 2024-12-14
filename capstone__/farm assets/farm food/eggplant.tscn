@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b8eq78h37608a"]
+[gd_scene load_steps=4 format=3 uid="uid://b8eq78h37608a"]
 
 [ext_resource type="Script" path="res://farm assets/farm food/eggplant.gd" id="1_101jw"]
 [ext_resource type="Texture2D" uid="uid://cuhcn5rl0tvlw" path="res://farm assets/farm food/Eggplant.png" id="2_fxw4x"]
@@ -6,9 +6,6 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pp2wy"]
 radius = 12.0471
 height = 36.1412
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3rxda"]
-size = Vector2(8, 656)
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_101jw")
@@ -22,13 +19,3 @@ texture = ExtResource("2_fxw4x")
 position = Vector2(9.53674e-07, 4.76837e-07)
 scale = Vector2(2.65625, 2.65625)
 shape = SubResource("CapsuleShape2D_pp2wy")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1156, 328)
-shape = SubResource("RectangleShape2D_3rxda")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(0, 328)
-shape = SubResource("RectangleShape2D_3rxda")

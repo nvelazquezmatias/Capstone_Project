@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://v2vctmciv2vp"]
+[gd_scene load_steps=4 format=3 uid="uid://v2vctmciv2vp"]
 
 [ext_resource type="Script" path="res://farm assets/farm food/leek.gd" id="1_aoe7p"]
 [ext_resource type="Texture2D" uid="uid://c5b5j084jf2lh" path="res://farm assets/farm food/Leek.png" id="2_t0827"]
@@ -6,9 +6,6 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pfcxh"]
 radius = 39.852
 height = 141.043
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_eags6"]
-size = Vector2(13.75, 648)
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_aoe7p")
@@ -22,13 +19,3 @@ texture = ExtResource("2_t0827")
 position = Vector2(0, 1.52588e-05)
 rotation = -2.41205
 shape = SubResource("CapsuleShape2D_pfcxh")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-6.875, 324)
-shape = SubResource("RectangleShape2D_eags6")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1159.25, 324)
-shape = SubResource("RectangleShape2D_eags6")

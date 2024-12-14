@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dcjmc3inoug7t"]
+[gd_scene load_steps=16 format=3 uid="uid://dcjmc3inoug7t"]
 
 [ext_resource type="Script" path="res://farm assets/farmscene.gd" id="1_wd8vl"]
 [ext_resource type="Script" path="res://alien.gd" id="2_5lmj7"]
@@ -9,6 +9,9 @@
 [ext_resource type="Script" path="res://farm assets/texture_button.gd" id="8_rjenk"]
 [ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="9_p8bfp"]
 [ext_resource type="Texture2D" uid="uid://io5j3yqfffpo" path="res://Buttons/file (25).png" id="10_rr5a6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_visd8"]
+radius = 120.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_l0hcl"]
 radius = 110.43
@@ -48,6 +51,10 @@ script = ExtResource("2_5lmj7")
 z_index = 2
 position = Vector2(584, 504)
 texture = ExtResource("3_jl67s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Alien"]
+position = Vector2(584, 512)
+shape = SubResource("CircleShape2D_visd8")
 
 [node name="Area2D" type="Area2D" parent="Alien"]
 
