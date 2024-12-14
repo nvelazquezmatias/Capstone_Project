@@ -31,7 +31,3 @@ func _on_area_2d_area_entered(body: Area2D) -> void:
 		body.queue_free()  # Destroy food
 		foodeaten.emit(1)
 	#get_tree().current_scene.update_score(1) 
-
-
-func _on_foodeaten() -> void:
-	pass # Replace with function body.

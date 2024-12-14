@@ -35,7 +35,7 @@ func game_over():
 	print("Game Over!" + str(score))
 
 func _on_spawntimer_timeout() -> void:
-	print("spawnvegetables")
+	print("spawnfood")
 	# Choose a random food type
 	var food_type = food_scene_dict.keys()[randi() % food_scene_dict.size()]
 	var food_scene = food_scene_dict[food_type]
