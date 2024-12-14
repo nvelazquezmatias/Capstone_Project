@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bfgmg6j31iuma"]
+[gd_scene load_steps=19 format=3 uid="uid://bfgmg6j31iuma"]
 
 [ext_resource type="Script" path="res://Level2/Level 2/Level2 assets/level_2.gd" id="1_82yee"]
 [ext_resource type="Texture2D" uid="uid://46qud15ibje8" path="res://Level2/Background/istockphoto-689045072-170667a.jpg" id="1_ghwhi"]
@@ -8,7 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://dt6n0ax0rijr3" path="res://Level2/message.png" id="4_0fh8s"]
 [ext_resource type="Script" path="res://Level2/message.gd" id="5_i17yx"]
 [ext_resource type="Script" path="res://Level2/Level 2/Level2 assets/character_body_2d.gd" id="6_45guf"]
+[ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="9_hf1an"]
 [ext_resource type="Texture2D" uid="uid://io5j3yqfffpo" path="res://Buttons/file (25).png" id="9_hykm1"]
+[ext_resource type="FontFile" uid="uid://on3nbqaj8okm" path="res://Menu/magofonts/mago2.ttf" id="10_50hfk"]
+[ext_resource type="Script" path="res://Level2/Level 2/Level2 assets/texture_button.gd" id="10_m655f"]
+[ext_resource type="Texture2D" uid="uid://bb70fjyx4stkf" path="res://farm assets/Toxins/waste.png" id="11_jwvo0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0ujsp"]
 size = Vector2(553.486, 20)
@@ -19,9 +23,12 @@ size = Vector2(20, 317.173)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gxwrn"]
 size = Vector2(20, 301.323)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_bpj1b"]
+radius = 100.768
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kojrg"]
-radius = 111.428
-height = 288.443
+radius = 87.0421
+height = 174.084
 
 [node name="Level2" type="Node2D"]
 script = ExtResource("1_82yee")
@@ -76,7 +83,7 @@ theme_override_font_sizes/font_size = 40
 text = "BAG"
 
 [node name="Message" type="Sprite2D" parent="."]
-position = Vector2(743.713, 351.888)
+position = Vector2(504, 360)
 scale = Vector2(1.63036, 1.63036)
 texture = ExtResource("4_0fh8s")
 region_enabled = true
@@ -100,33 +107,100 @@ text = "Not much food around, but hey, at least
 it's packaged!"
 
 [node name="Timer" type="Timer" parent="Message"]
-wait_time = 3.0
+wait_time = 2.0
+autostart = true
 
 [node name="Alien" type="CharacterBody2D" parent="."]
 script = ExtResource("6_45guf")
 
-[node name="Sprite2D" type="Sprite2D" parent="Alien"]
-position = Vector2(840, 528)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Alien"]
+position = Vector2(584, 528)
 scale = Vector2(1.27273, 1.27273)
+shape = SubResource("CircleShape2D_bpj1b")
+
+[node name="Sprite2D" type="Sprite2D" parent="Alien"]
+position = Vector2(581.023, 532)
+scale = Vector2(1.22727, 1.22727)
 texture = ExtResource("2_ny3ag")
 
 [node name="Area2D" type="Area2D" parent="Alien"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Alien/Area2D"]
-position = Vector2(840, 528)
+position = Vector2(584, 536)
 rotation = -1.51844
 shape = SubResource("CapsuleShape2D_kojrg")
 
 [node name="SpawnTimer" type="Timer" parent="."]
 
-[node name="File(25)" type="Sprite2D" parent="."]
-position = Vector2(1096, 64)
-scale = Vector2(0.713235, 0.713236)
+[node name="Node" type="Node" parent="."]
+
+[node name="Panel" type="Panel" parent="Node"]
+offset_left = 184.0
+offset_top = 64.0
+offset_right = 952.0
+offset_bottom = 288.0
+
+[node name="Label3" type="Label" parent="Node/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.092
+anchor_top = -0.417
+anchor_right = -0.092
+anchor_bottom = -0.417
+offset_left = 270.656
+offset_top = 101.408
+offset_right = 729.656
+offset_bottom = 168.408
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("9_hf1an")
+theme_override_font_sizes/font_size = 75
+text = "HAZARD WARNING:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Node/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.092
+anchor_top = -0.417
+anchor_right = -0.092
+anchor_bottom = -0.417
+offset_left = 270.656
+offset_top = 157.408
+offset_right = 710.656
+offset_bottom = 259.408
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_fonts/font = ExtResource("10_50hfk")
+theme_override_font_sizes/font_size = 40
+text = "Avoid toxic barrels. Contact with these
+will spoil your food supply and hinder
+your progress. "
+vertical_alignment = 1
+
+[node name="Waste" type="Sprite2D" parent="Node/Panel"]
+position = Vector2(136, 120)
+scale = Vector2(3.25, 3.25)
+texture = ExtResource("11_jwvo0")
+
+[node name="File(25)" type="Sprite2D" parent="Node"]
+position = Vector2(1090.78, 58.7374)
+scale = Vector2(0.625525, 0.625526)
 texture = ExtResource("9_hykm1")
 region_enabled = true
 region_rect = Rect2(111, 403, 119, 120)
+
+[node name="TextureButton" type="TextureButton" parent="Node"]
+offset_left = 1032.0
+offset_top = 8.0
+offset_right = 1144.0
+offset_bottom = 104.0
+script = ExtResource("10_m655f")
 
 [connection signal="timeout" from="Message/Timer" to="Message" method="_on_timer_timeout"]
 [connection signal="foodeaten" from="Alien" to="." method="_on_character_body_2d_foodeaten"]
 [connection signal="area_entered" from="Alien/Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
+[connection signal="pressed" from="Node/TextureButton" to="Node/TextureButton" method="_on_pressed"]

@@ -34,10 +34,6 @@ func _on_FoodEaten(food_name: String):
 func game_over():
 	print("Game Over!" + str(score))
 
-func _on_timer_timeout() -> void:
-	$Message.hide()
-
-
 func _on_spawntimer_timeout() -> void:
 	print("spawnvegetables")
 	# Choose a random food type
@@ -60,15 +56,3 @@ func _on_alien_foodeaten(value) -> void:
 	$ProgressBar.value= score 
 	if score >= $ProgressBar.max_value: 
 		get_tree().change_scene_to_file("res://LevelUp/LevelUp.tscn") # Replace with function body.
-
-
-func _on_character_body_2d_foodeaten() -> void:
-	pass # Replace with function body.
-
-
-func _on_area_2d_area_entered(area: Area2D) -> void:
-	pass # Replace with function body.
-
-
-func _on_spawn_timer_timeout() -> void:
-	pass # Replace with function body.

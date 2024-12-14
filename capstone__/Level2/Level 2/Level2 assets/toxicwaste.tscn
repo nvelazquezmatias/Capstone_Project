@@ -1,3 +1,18 @@
-[gd_scene format=3 uid="uid://bbvhi2vtf0tcb"]
+[gd_scene load_steps=4 format=3 uid="uid://bbvhi2vtf0tcb"]
 
-[node name="Toxicwaste" type="Node2D"]
+[ext_resource type="Script" path="res://Level2/Level 2/Level2 assets/toxicwaste.gd" id="1_nwllk"]
+[ext_resource type="Texture2D" uid="uid://bb70fjyx4stkf" path="res://farm assets/Toxins/waste.png" id="2_5qmhp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0qj2g"]
+radius = 32.0
+height = 128.0
+
+[node name="ToxicWaste" type="Area2D" groups=["toxic"]]
+script = ExtResource("1_nwllk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_0qj2g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("2_5qmhp")
