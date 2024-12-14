@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://trnmukvj41ua" path="res://farm assets/farm food/Pumpkin.png" id="2_usnfw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ckbx1"]
-radius = 28.0
-height = 76.0
+radius = 40.0
+height = 96.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ssww"]
 size = Vector2(17, 648)
@@ -14,7 +14,7 @@ size = Vector2(17, 648)
 script = ExtResource("1_6vbn0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(2.28125, 2.28125)
+scale = Vector2(2.68066, 2.68066)
 texture = ExtResource("2_usnfw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

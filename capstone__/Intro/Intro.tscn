@@ -467,17 +467,12 @@ offset_bottom = 277.935
 stream = ExtResource("18_3hgq6")
 
 [node name="10BasicMessageBoxesByCharlesGabriel" type="Sprite2D" parent="."]
-position = Vector2(584, 288)
-scale = Vector2(2.81598, 2.75481)
+position = Vector2(584, 270.281)
+scale = Vector2(2.81598, 2.30048)
 texture = ExtResource("3_u6hg2")
 region_enabled = true
 region_rect = Rect2(1, 801, 318, 78)
 script = ExtResource("14_ygbao")
-
-[node name="Timer" type="Timer" parent="10BasicMessageBoxesByCharlesGabriel"]
-wait_time = 3.0
-one_shot = true
-autostart = true
 
 [node name="Label" type="Label" parent="10BasicMessageBoxesByCharlesGabriel"]
 anchors_preset = -1
@@ -485,20 +480,26 @@ anchor_left = -0.073
 anchor_top = -0.139
 anchor_right = -0.073
 anchor_bottom = -0.139
-offset_left = -124.514
-offset_top = -18.1981
-offset_right = 182.486
-offset_bottom = 49.8019
+offset_left = -115.786
+offset_top = -16.158
+offset_right = 164.214
+offset_bottom = 34.842
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("19_dfrch")
 theme_override_font_sizes/font_size = 20
-text = "Fizbis planet is running low on food. Time to 
-find some more on Earth! 
-Little does he know...
+text = "Our planet's starving! Time to raid Earth.
+Little did we know..... there's been a disaster 
+on earth.
 "
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="10BasicMessageBoxesByCharlesGabriel"]
+wait_time = 3.0
+one_shot = true
+autostart = true
 
 [connection signal="pressed" from="GreenPressedUnpressedOverlinedCopy/TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="timeout" from="10BasicMessageBoxesByCharlesGabriel/Timer" to="10BasicMessageBoxesByCharlesGabriel" method="_on_timer_timeout"]

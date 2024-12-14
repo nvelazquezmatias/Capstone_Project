@@ -40,41 +40,62 @@ region_enabled = true
 region_rect = Rect2(165, 88, 15, 15)
 
 [node name="(2)" type="Sprite2D" parent="."]
-position = Vector2(616, 320)
-scale = Vector2(0.779891, 0.600814)
+position = Vector2(616, 328)
+scale = Vector2(0.874606, 0.75899)
 texture = ExtResource("3_v6i8u")
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="(2)"]
 anchors_preset = -1
 anchor_left = -0.512
 anchor_top = 0.018
 anchor_right = -0.512
 anchor_bottom = 0.018
-offset_left = 416.0
-offset_top = 120.0
-offset_right = 840.0
-offset_bottom = 189.0
+offset_left = 139.011
+offset_top = -381.897
+offset_right = 620.011
+offset_bottom = -207.897
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_uvruh")
-theme_override_font_sizes/font_size = 80
-text = "Instructions"
+theme_override_font_sizes/font_size = 70
+text = "Welcome to 
+Post-Nuclear Earth!
+
+"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Label"]
-layout_mode = 0
-offset_left = 16.0
-offset_top = 88.0
-offset_right = 405.0
-offset_bottom = 328.0
+[node name="RichTextLabel" type="RichTextLabel" parent="(2)"]
+offset_left = -109.764
+offset_top = -231.887
+offset_right = 91.2363
+offset_bottom = -157.887
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("5_vk2pv")
-theme_override_font_sizes/normal_font_size = 40
-text = "Use < and > to collect food and reach 100%
+theme_override_font_sizes/normal_font_size = 50
+text = "How to Play:"
+scroll_active = false
 
-Avoid toxic waste
+[node name="Label2" type="Label" parent="(2)"]
+offset_left = -274.409
+offset_top = -210.806
+offset_right = 274.591
+offset_bottom = 346.194
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_vk2pv")
+theme_override_font_sizes/font_size = 40
+text = "Move: Use the arrow keys (< and >) to 
+navigate 
 
-Fill your bag to unlock new locations!
-"
+Collect Food: Gather food items to fill 
+your bag
+
+Avoid Toxic Waste: Steer clear of toxic 
+barrels to prevent food spoilage
+
+Complete the Level: Fill your bag to 100%
+to advance to the next level.
+
+Good luck!"
+vertical_alignment = 1
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

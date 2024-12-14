@@ -1,0 +1,80 @@
+[gd_scene load_steps=9 format=3 uid="uid://cdhi7axew615m"]
+
+[ext_resource type="Script" path="res://Final Scene/final.gd" id="1_4a4ol"]
+[ext_resource type="Texture2D" uid="uid://sg0qdwu35toc" path="res://Menu/Background_space_original.png" id="1_615y7"]
+[ext_resource type="Texture2D" uid="uid://dqi4oj5c0o0m3" path="res://Final Scene/Space2-export.png" id="2_ng63m"]
+[ext_resource type="Texture2D" uid="uid://dv6w7opopm103" path="res://youarehere/spaceships.png" id="3_q6g2m"]
+[ext_resource type="Texture2D" uid="uid://bq6hmma7g1l3p" path="res://Dialogue /10_basic_message_boxes_by_CharlesGabriel.png" id="4_540yx"]
+[ext_resource type="Texture2D" uid="uid://ds47u286andf3" path="res://Buttons/buttons asset pack/BlueButtons.png" id="5_lfy17"]
+[ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="5_otw07"]
+[ext_resource type="Script" path="res://Final Scene/10_basic_message_boxes_by_charles_gabriel.gd" id="7_ams3e"]
+
+[node name="Final" type="Node2D"]
+script = ExtResource("1_4a4ol")
+
+[node name="BackgroundSpaceOriginal" type="Sprite2D" parent="."]
+position = Vector2(576.427, 324)
+scale = Vector2(4.50333, 4.32)
+texture = ExtResource("1_615y7")
+metadata/_edit_lock_ = true
+
+[node name="Space2-export" type="Sprite2D" parent="."]
+position = Vector2(577, 583)
+scale = Vector2(0.898438, 0.910938)
+texture = ExtResource("2_ng63m")
+metadata/_edit_lock_ = true
+
+[node name="Spaceships" type="Sprite2D" parent="."]
+position = Vector2(872, 488)
+scale = Vector2(3.57108, 3.57108)
+texture = ExtResource("3_q6g2m")
+region_enabled = true
+region_rect = Rect2(29, 125, 115, 51)
+
+[node name="BlueButtons" type="Sprite2D" parent="."]
+position = Vector2(600, 360)
+scale = Vector2(4.91667, 4.91667)
+texture = ExtResource("5_lfy17")
+region_enabled = true
+region_rect = Rect2(93, 39, 47, 12)
+
+[node name="TextureButton" type="TextureButton" parent="BlueButtons"]
+anchors_preset = -1
+anchor_left = -2.096
+anchor_top = -5.602
+anchor_right = -2.096
+anchor_bottom = -5.602
+offset_left = 74.512
+offset_top = 59.224
+offset_right = 122.512
+offset_bottom = 75.224
+
+[node name="10BasicMessageBoxesByCharlesGabriel" type="Sprite2D" parent="."]
+position = Vector2(624, 336)
+scale = Vector2(3.01923, 2.35897)
+texture = ExtResource("4_540yx")
+region_enabled = true
+region_rect = Rect2(1, 641, 318, 78)
+script = ExtResource("7_ams3e")
+
+[node name="Label" type="Label" parent="10BasicMessageBoxesByCharlesGabriel"]
+anchors_preset = -1
+anchor_left = -0.15
+anchor_top = -1.109
+anchor_right = -0.15
+anchor_bottom = -1.109
+offset_left = -74.1854
+offset_top = 52.589
+offset_right = 169.815
+offset_bottom = 116.589
+theme_override_fonts/font = ExtResource("5_otw07")
+text = "Victory! Deliver the harvest. Your people await."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="10BasicMessageBoxesByCharlesGabriel"]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="pressed" from="BlueButtons/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="timeout" from="10BasicMessageBoxesByCharlesGabriel/Timer" to="10BasicMessageBoxesByCharlesGabriel" method="_on_timer_timeout"]

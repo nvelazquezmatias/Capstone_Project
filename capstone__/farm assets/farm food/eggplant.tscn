@@ -5,6 +5,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pp2wy"]
 radius = 12.0471
+height = 36.1412
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3rxda"]
 size = Vector2(8, 656)
@@ -13,12 +14,12 @@ size = Vector2(8, 656)
 script = ExtResource("1_101jw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-9.53674e-07, 9.53674e-07)
-scale = Vector2(1.78906, 1.78906)
+position = Vector2(4.76837e-07, -4.76837e-07)
+scale = Vector2(2.66113, 2.66113)
 texture = ExtResource("2_fxw4x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.52588e-05, 7.62939e-06)
+position = Vector2(9.53674e-07, 4.76837e-07)
 scale = Vector2(2.65625, 2.65625)
 shape = SubResource("CapsuleShape2D_pp2wy")
 
@@ -29,5 +30,5 @@ position = Vector2(1156, 328)
 shape = SubResource("RectangleShape2D_3rxda")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-5, 328)
+position = Vector2(0, 328)
 shape = SubResource("RectangleShape2D_3rxda")

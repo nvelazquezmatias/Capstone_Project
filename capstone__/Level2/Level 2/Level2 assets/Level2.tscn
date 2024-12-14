@@ -1,29 +1,27 @@
-[gd_scene load_steps=13 format=3 uid="uid://bfgmg6j31iuma"]
+[gd_scene load_steps=14 format=3 uid="uid://bfgmg6j31iuma"]
 
 [ext_resource type="Script" path="res://Level2/Level 2/Level2 assets/level_2.gd" id="1_82yee"]
 [ext_resource type="Texture2D" uid="uid://46qud15ibje8" path="res://Level2/Background/istockphoto-689045072-170667a.jpg" id="1_ghwhi"]
 [ext_resource type="Texture2D" uid="uid://cxvs7njjdxaoh" path="res://farm assets/Aliens/Alien-1.png" id="2_ny3ag"]
+[ext_resource type="Texture2D" uid="uid://bq6hmma7g1l3p" path="res://Dialogue /10_basic_message_boxes_by_CharlesGabriel.png" id="3_5p0mt"]
 [ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="3_ivvu0"]
 [ext_resource type="Texture2D" uid="uid://dt6n0ax0rijr3" path="res://Level2/message.png" id="4_0fh8s"]
 [ext_resource type="Script" path="res://Level2/message.gd" id="5_i17yx"]
 [ext_resource type="Script" path="res://Level2/Level 2/Level2 assets/character_body_2d.gd" id="6_45guf"]
+[ext_resource type="Texture2D" uid="uid://io5j3yqfffpo" path="res://Buttons/file (25).png" id="9_hykm1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0ujsp"]
 size = Vector2(553.486, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lonqf"]
-size = Vector2(20, 306.11)
+size = Vector2(20, 317.173)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gxwrn"]
 size = Vector2(20, 301.323)
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d1lkf"]
-radius = 105.0
-height = 263.87
-
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kojrg"]
-radius = 111.0
-height = 263.952
+radius = 111.428
+height = 288.443
 
 [node name="Level2" type="Node2D"]
 script = ExtResource("1_82yee")
@@ -38,38 +36,44 @@ metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Background/StaticBody2D"]
 position = Vector2(2.66556, 159.103)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_0ujsp")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Background/StaticBody2D"]
-position = Vector2(-280.817, 5.47059)
+position = Vector2(-280.817, -0.0607452)
 scale = Vector2(1, 0.999999)
 shape = SubResource("RectangleShape2D_lonqf")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Background/StaticBody2D"]
 position = Vector2(283.635, -1.60294)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_gxwrn")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 32.0
-offset_top = 32.0
-offset_right = 304.0
-offset_bottom = 64.0
+[node name="10BasicMessageBoxesByCharlesGabriel" type="Sprite2D" parent="."]
+position = Vector2(288, 88)
+scale = Vector2(1.46386, 1.46386)
+texture = ExtResource("3_5p0mt")
+region_enabled = true
+region_rect = Rect2(1, 881, 318, 78)
+
+[node name="ProgressBar" type="ProgressBar" parent="10BasicMessageBoxesByCharlesGabriel"]
+offset_left = -142.091
+offset_top = -5.46502
+offset_right = 142.909
+offset_bottom = 30.535
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ivvu0")
+theme_override_font_sizes/font_size = 40
+
+[node name="Label" type="Label" parent="10BasicMessageBoxesByCharlesGabriel"]
+z_index = 3
+offset_left = -142.091
+offset_top = -38.2551
+offset_right = 129.909
+offset_bottom = -6.25515
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_ivvu0")
 theme_override_font_sizes/font_size = 40
 text = "BAG"
-
-[node name="ProgressBar" type="ProgressBar" parent="."]
-offset_left = 32.0
-offset_top = 72.0
-offset_right = 312.0
-offset_bottom = 108.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_ivvu0")
-theme_override_font_sizes/font_size = 40
 
 [node name="Message" type="Sprite2D" parent="."]
 position = Vector2(743.713, 351.888)
@@ -85,15 +89,15 @@ anchor_left = -1.317
 anchor_top = -1.702
 anchor_right = -1.317
 anchor_bottom = -1.702
-offset_left = 227.699
-offset_top = 137.424
-offset_right = 448.699
-offset_bottom = 181.424
+offset_left = 227.698
+offset_top = 132.516
+offset_right = 438.698
+offset_bottom = 176.516
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_ivvu0")
 text = "Not much food around, but hey, at least 
-it tastes good!"
+it's packaged!"
 
 [node name="Timer" type="Timer" parent="Message"]
 wait_time = 3.0
@@ -106,19 +110,21 @@ position = Vector2(840, 528)
 scale = Vector2(1.27273, 1.27273)
 texture = ExtResource("2_ny3ag")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Alien"]
-position = Vector2(843, 529)
-rotation = -1.60221
-shape = SubResource("CapsuleShape2D_d1lkf")
-
 [node name="Area2D" type="Area2D" parent="Alien"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Alien/Area2D"]
-position = Vector2(839, 533)
+position = Vector2(840, 528)
 rotation = -1.51844
 shape = SubResource("CapsuleShape2D_kojrg")
 
 [node name="SpawnTimer" type="Timer" parent="."]
+
+[node name="File(25)" type="Sprite2D" parent="."]
+position = Vector2(1096, 64)
+scale = Vector2(0.713235, 0.713236)
+texture = ExtResource("9_hykm1")
+region_enabled = true
+region_rect = Rect2(111, 403, 119, 120)
 
 [connection signal="timeout" from="Message/Timer" to="Message" method="_on_timer_timeout"]
 [connection signal="foodeaten" from="Alien" to="." method="_on_character_body_2d_foodeaten"]

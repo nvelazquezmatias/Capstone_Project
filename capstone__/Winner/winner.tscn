@@ -1,0 +1,94 @@
+[gd_scene load_steps=8 format=3 uid="uid://bunvx4p71oq3w"]
+
+[ext_resource type="Script" path="res://Winner/winner.gd" id="1_6oqv1"]
+[ext_resource type="Texture2D" uid="uid://sg0qdwu35toc" path="res://Menu/Background_space_original.png" id="1_lxggl"]
+[ext_resource type="Shader" path="res://Menu/Menu.gdshader" id="2_07o3q"]
+[ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="3_eescj"]
+[ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Buttons/buttons asset pack/GreenButtons.png" id="4_aayfh"]
+[ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="5_gieap"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vadur"]
+shader = ExtResource("2_07o3q")
+
+[node name="Winner" type="Node2D"]
+script = ExtResource("1_6oqv1")
+
+[node name="BackgroundSpaceOriginal" type="Sprite2D" parent="."]
+position = Vector2(574.08, 324)
+scale = Vector2(4.515, 4.32)
+texture = ExtResource("1_lxggl")
+metadata/_edit_lock_ = true
+
+[node name="Label2" type="Label" parent="."]
+material = SubResource("ShaderMaterial_vadur")
+offset_left = 344.0
+offset_top = 288.0
+offset_right = 790.0
+offset_bottom = 344.0
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_fonts/font = ExtResource("5_gieap")
+theme_override_font_sizes/font_size = 70
+text = "Gather more food?"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="Label" type="Label" parent="."]
+material = SubResource("ShaderMaterial_vadur")
+anchors_preset = -1
+anchor_left = -3.255
+anchor_top = -7.401
+anchor_right = -3.255
+anchor_bottom = -7.401
+offset_left = 248.0
+offset_top = 120.0
+offset_right = 923.0
+offset_bottom = 279.0
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_fonts/font = ExtResource("3_eescj")
+theme_override_font_sizes/font_size = 200
+text = "Finished !"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="GreenButtons3" type="Sprite2D" parent="."]
+position = Vector2(448, 416)
+scale = Vector2(5.0434, 5.0434)
+texture = ExtResource("4_aayfh")
+region_enabled = true
+region_rect = Rect2(7, 153, 36, 12)
+
+[node name="TextureButton" type="TextureButton" parent="GreenButtons3"]
+anchors_preset = -1
+anchor_left = -1.967
+anchor_top = -6.374
+anchor_right = -1.967
+anchor_bottom = -6.374
+offset_left = 51.812
+offset_top = 68.488
+offset_right = 89.812
+offset_bottom = 84.488
+
+[node name="GreenButtons2" type="Sprite2D" parent="."]
+position = Vector2(672, 416)
+scale = Vector2(4.91667, 4.91667)
+texture = ExtResource("4_aayfh")
+region_enabled = true
+region_rect = Rect2(7, 168, 36, 12)
+
+[node name="no" type="TextureButton" parent="GreenButtons2"]
+anchors_preset = -1
+anchor_left = -3.297
+anchor_top = -6.551
+anchor_right = -3.297
+anchor_bottom = -6.551
+offset_left = 100.692
+offset_top = 71.612
+offset_right = 136.692
+offset_bottom = 85.612
+
+[connection signal="pressed" from="GreenButtons3/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="GreenButtons2/no" to="." method="_on_no_pressed"]

@@ -1,0 +1,65 @@
+[gd_scene load_steps=13 format=3 uid="uid://b2gve26gjottw"]
+
+[ext_resource type="Texture2D" uid="uid://8t1yghl7y8c7" path="res://Intro2/Background/1.png" id="1_vmr41"]
+[ext_resource type="Texture2D" uid="uid://elal73b71axt" path="res://Intro2/Background/2.png" id="2_jwpmj"]
+[ext_resource type="Texture2D" uid="uid://cabwuecwtnda7" path="res://Intro2/Background/3.png" id="3_jpuq8"]
+[ext_resource type="Texture2D" uid="uid://bx76jeqqekj2v" path="res://Intro2/Background/4.png" id="4_crm3p"]
+[ext_resource type="Texture2D" uid="uid://bwuduslfrlu2j" path="res://Intro2/Background/5.png" id="5_ndrl4"]
+[ext_resource type="Texture2D" uid="uid://rckgxec4jpo8" path="res://Intro2/Background/Demo.png" id="6_rb7yh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gy2m"]
+atlas = ExtResource("2_jwpmj")
+region = Rect2(0, 0, 480, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xhtfr"]
+atlas = ExtResource("3_jpuq8")
+region = Rect2(0, 0, 480, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fguwk"]
+atlas = ExtResource("4_crm3p")
+region = Rect2(0, 0, 480, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3vqgq"]
+atlas = ExtResource("5_ndrl4")
+region = Rect2(0, 0, 480, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55rin"]
+atlas = ExtResource("6_rb7yh")
+region = Rect2(0, 0, 480, 180)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j3tdk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gy2m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xhtfr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fguwk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3vqgq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55rin")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Intro2" type="Node2D"]
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(569.333, 323.5)
+scale = Vector2(2.40556, 3.51667)
+texture = ExtResource("1_vmr41")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1088, 520)
+scale = Vector2(2.41667, 3.56667)
+sprite_frames = SubResource("SpriteFrames_j3tdk")
+autoplay = "default"
+frame_progress = 0.293815

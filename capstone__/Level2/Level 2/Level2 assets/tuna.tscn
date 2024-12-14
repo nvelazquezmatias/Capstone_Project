@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bq81lurvpci1t"]
+
+[ext_resource type="Script" path="res://Level2/Level 2/Level2 assets/tuna.gd" id="1_cw8yh"]
+[ext_resource type="Texture2D" uid="uid://dnh5fa8vakci0" path="res://Level2/Level 2/Level2 assets/Pixel_Mart/tuna_can.png" id="2_aymqd"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b7mtm"]
+radius = 43.0981
+height = 121.728
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_cw8yh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-9.53675e-07, 3.05176e-05)
+rotation = -1.51844
+shape = SubResource("CapsuleShape2D_b7mtm")
+
+[node name="TunaCan" type="Sprite2D" parent="Area2D"]
+scale = Vector2(3, 3)
+texture = ExtResource("2_aymqd")
