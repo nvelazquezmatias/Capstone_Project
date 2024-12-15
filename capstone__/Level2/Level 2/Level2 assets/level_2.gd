@@ -16,9 +16,9 @@ func _ready():
 	# Initialize food dictionary
 	food_scene_dict = {
 		"Drink": preload("res://Level2/Level 2/Level2 assets/drink.tscn"),
-		"Tune": preload("res://Level2/Level 2/Level2 assets/tuna.tscn"),
+		"Tuna": preload("res://Level2/Level 2/Level2 assets/tuna.tscn"),
 		"Chips": preload("res://Level2/Level 2/Level2 assets/chips.tscn"),
-		"Jam": preload("res://Level2/Level 2/Level2 assets/jam.tscn")
+		"PeanutButter": preload("res://Level2/Level 2/Level2 assets/peanutbutter.tscn")
 	}
 
 func _on_FoodEaten(food_name: String):

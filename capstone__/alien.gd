@@ -1,5 +1,5 @@
 extends CharacterBody2D
-var speed: float = 200  # Movement speed
+var speed: float = 315  # Movement speed
 signal foodeaten
 
 func _ready():

@@ -27,11 +27,11 @@ size = Vector2(20, 301.323)
 size = Vector2(582.296, 16.853)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bpj1b"]
-radius = 100.768
+radius = 87.9998
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kojrg"]
-radius = 87.042
-height = 174.084
+radius = 112.265
+height = 240.508
 
 [node name="Level2" type="Node2D"]
 script = ExtResource("1_82yee")
@@ -59,31 +59,33 @@ shape = SubResource("RectangleShape2D_gxwrn")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Background/StaticBody2D"]
 position = Vector2(3.75676, -151.353)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_hh54j")
 
 [node name="10BasicMessageBoxesByCharlesGabriel" type="Sprite2D" parent="."]
-position = Vector2(264, 72)
+position = Vector2(264, 80)
 scale = Vector2(1.53193, 1.53193)
 texture = ExtResource("3_5p0mt")
 region_enabled = true
 region_rect = Rect2(1, 80, 318, 80)
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
-offset_left = 57.0
-offset_top = 67.0
-offset_right = 480.0
-offset_bottom = 112.0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 471.0
+offset_bottom = 117.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("3_ivvu0")
 theme_override_font_sizes/font_size = 40
+max_value = 20.0
+step = 1.0
+rounded = true
 
 [node name="Label" type="Label" parent="."]
-offset_left = 64.0
-offset_top = 24.0
-offset_right = 440.0
-offset_bottom = 56.0
+offset_left = 56.0
+offset_top = 32.0
+offset_right = 432.0
+offset_bottom = 64.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_ivvu0")
@@ -122,23 +124,24 @@ autostart = true
 script = ExtResource("6_45guf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Alien"]
-position = Vector2(584, 528)
+position = Vector2(576, 528)
 scale = Vector2(1.27273, 1.27273)
 shape = SubResource("CircleShape2D_bpj1b")
 
 [node name="Sprite2D" type="Sprite2D" parent="Alien"]
-position = Vector2(581.023, 532)
-scale = Vector2(1.22727, 1.22727)
+position = Vector2(576, 528)
+scale = Vector2(1.03409, 1.03409)
 texture = ExtResource("2_ny3ag")
 
 [node name="Area2D" type="Area2D" parent="Alien"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Alien/Area2D"]
-position = Vector2(584, 544)
+position = Vector2(576, 528)
 rotation = -1.51844
 shape = SubResource("CapsuleShape2D_kojrg")
 
 [node name="spawntimer" type="Timer" parent="."]
+autostart = true
 
 [node name="Node" type="Node" parent="."]
 
@@ -195,21 +198,21 @@ scale = Vector2(3.25, 3.25)
 texture = ExtResource("11_jwvo0")
 
 [node name="File(25)" type="Sprite2D" parent="Node"]
-position = Vector2(1090.78, 58.7374)
-scale = Vector2(0.625525, 0.625526)
+position = Vector2(1091.39, 67.4188)
+scale = Vector2(0.615288, 0.61529)
 texture = ExtResource("9_hykm1")
 region_enabled = true
 region_rect = Rect2(111, 403, 119, 120)
 
 [node name="TextureButton" type="TextureButton" parent="Node"]
-offset_left = 1032.0
-offset_top = 8.0
+offset_left = 1040.0
+offset_top = 24.0
 offset_right = 1144.0
-offset_bottom = 104.0
+offset_bottom = 120.0
 script = ExtResource("10_m655f")
 
 [connection signal="timeout" from="Message/Timer" to="Message" method="_on_timer_timeout"]
-[connection signal="foodeaten" from="Alien" to="." method="_on_character_body_2d_foodeaten"]
-[connection signal="area_entered" from="Alien/Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="timeout" from="spawntimer" to="." method="_on_spawn_timer_timeout"]
+[connection signal="foodeaten" from="Alien" to="." method="_on_alien_foodeaten"]
+[connection signal="area_entered" from="Alien/Area2D" to="Alien" method="_on_area_2d_area_entered"]
+[connection signal="timeout" from="spawntimer" to="." method="_on_spawntimer_timeout"]
 [connection signal="pressed" from="Node/TextureButton" to="Node/TextureButton" method="_on_pressed"]

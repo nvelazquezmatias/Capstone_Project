@@ -7,16 +7,14 @@
 radius = 43.0981
 height = 121.728
 
-[node name="Node2D" type="Node2D"]
-
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D"]
 script = ExtResource("1_cw8yh")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-9.53675e-07, 3.05176e-05)
 rotation = -1.51844
 shape = SubResource("CapsuleShape2D_b7mtm")
 
-[node name="TunaCan" type="Sprite2D" parent="Area2D"]
+[node name="TunaCan" type="Sprite2D" parent="."]
 scale = Vector2(3, 3)
 texture = ExtResource("2_aymqd")

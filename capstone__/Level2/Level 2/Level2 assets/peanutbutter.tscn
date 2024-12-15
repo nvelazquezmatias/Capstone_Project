@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbjqef2buskkv"]
+
+[ext_resource type="Script" path="res://Level2/Level 2/Level2 assets/peanutbutter.gd" id="1_eydat"]
+[ext_resource type="Texture2D" uid="uid://byqkrlo2x0nrs" path="res://Level2/Level 2/Level2 assets/Pixel_Mart/peanut_butter.png" id="2_40i38"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vka5t"]
+radius = 56.5685
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_eydat")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_vka5t")
+
+[node name="PeanutButter" type="Sprite2D" parent="."]
+position = Vector2(-1.90735e-06, -1.90735e-06)
+scale = Vector2(3.125, 3.125)
+texture = ExtResource("2_40i38")

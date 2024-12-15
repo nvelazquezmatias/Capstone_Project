@@ -1,5 +1,5 @@
 extends CharacterBody2D
-var speed: float = 200  # Movement speed
+var speed: float = 300  # Movement speed
 signal foodeaten
 
 func _ready():
@@ -23,18 +23,11 @@ func _process(delta):
 func _on_timer_timeout() -> void:
 	pass # Replace with function body.
 
-func _on_character_body_2d_entered(body: Area2D) -> void:
+func _on_area_2d_area_entered(body: Area2D) -> void:
 	if body.is_in_group("toxic"):  # Check if the object is food
 		body.queue_free() #destroy toxic waste
 		foodeaten.emit(-1)
 	else:
 		body.queue_free()  # Destroy food
 		foodeaten.emit(1)
-	#get_tree().current_scene.update_s"res://farm assets/farmscene.tscn"core(1) 
-		
-func _on_foodeaten() -> void:
-	pass
-
-
-func _on_area_2d_area_entered(area: Area2D) -> void:
-	pass # Replace with function body.
+	#get_tree().current_scene.update_score(1) 
