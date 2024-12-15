@@ -1,11 +1,9 @@
-[gd_scene load_steps=18 format=3 uid="uid://1hmbs4v73u74"]
+[gd_scene load_steps=16 format=3 uid="uid://1hmbs4v73u74"]
 
 [ext_resource type="Script" path="res://LevelUp/reward.gd" id="1_k7cjp"]
 [ext_resource type="Texture2D" uid="uid://sg0qdwu35toc" path="res://Menu/Background_space_original.png" id="2_an2pm"]
 [ext_resource type="Texture2D" uid="uid://beg4bg0brq8o2" path="res://LevelUp/FallingStar_Sprites.png" id="3_3fpu2"]
 [ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="4_dh2ti"]
-[ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="5_asb8u"]
-[ext_resource type="FontFile" uid="uid://on3nbqaj8okm" path="res://Menu/magofonts/mago2.ttf" id="6_qh648"]
 [ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Buttons/buttons asset pack/GreenButtons.png" id="7_jsoig"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_de0hp"]
@@ -96,36 +94,13 @@ frame_progress = 0.301576
 
 [node name="Label" type="Label" parent="."]
 offset_left = 248.0
-offset_top = 112.0
+offset_top = 200.0
 offset_right = 898.0
-offset_bottom = 271.0
+offset_bottom = 359.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_dh2ti")
 theme_override_font_sizes/font_size = 200
 text = "LEVEL UP!"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ProgressBar" type="ProgressBar" parent="."]
-offset_left = 464.0
-offset_top = 328.0
-offset_right = 744.0
-offset_bottom = 380.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("5_asb8u")
-theme_override_font_sizes/font_size = 60
-
-[node name="Label2" type="Label" parent="."]
-offset_left = 560.0
-offset_top = 264.0
-offset_right = 668.0
-offset_bottom = 324.0
-theme_override_colors/font_color = Color(0.647059, 0.8, 0.431373, 1)
-theme_override_constants/shadow_offset_x = 10
-theme_override_constants/shadow_offset_y = 20
-theme_override_fonts/font = ExtResource("6_qh648")
-theme_override_font_sizes/font_size = 75
-text = "Score"
 horizontal_alignment = 1
 vertical_alignment = 1
 

@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bspb6k21phu8w"]
+[gd_scene load_steps=8 format=3 uid="uid://bspb6k21phu8w"]
 
 [ext_resource type="Texture2D" uid="uid://b2pldl5h6g2v8" path="res://Level2/Level 2/OpeningScene/Intro.jpg" id="1_12uov"]
 [ext_resource type="Script" path="res://Level2/Level 2/OpeningScene/level_2_opening_scene.gd" id="1_vhrbc"]
 [ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Buttons/buttons asset pack/GreenButtons.png" id="2_1oejs"]
 [ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="3_qaj14"]
 [ext_resource type="Texture2D" uid="uid://bq6hmma7g1l3p" path="res://Dialogue /10_basic_message_boxes_by_CharlesGabriel.png" id="5_xh55h"]
+[ext_resource type="Script" path="res://Level2/Level 2/OpeningScene/10_basic_message_boxes_by_charles_gabriel.gd" id="6_8fkvu"]
 [ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="6_xxvc6"]
 
 [node name="Level2OpeningScene" type="Node2D"]
@@ -54,9 +55,10 @@ scale = Vector2(2.4708, 2.02244)
 texture = ExtResource("5_xh55h")
 region_enabled = true
 region_rect = Rect2(1, 641, 318, 78)
+script = ExtResource("6_8fkvu")
 
 [node name="Timer" type="Timer" parent="10BasicMessageBoxesByCharlesGabriel"]
-wait_time = 3.0
+wait_time = 2.0
 one_shot = true
 
 [node name="Label" type="Label" parent="10BasicMessageBoxesByCharlesGabriel"]
@@ -81,4 +83,4 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="pressed" from="GreenButtons/TextureButton" to="." method="_on_texture_button_pressed"]
-[connection signal="timeout" from="10BasicMessageBoxesByCharlesGabriel/Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="10BasicMessageBoxesByCharlesGabriel/Timer" to="10BasicMessageBoxesByCharlesGabriel" method="_on_timer_timeout"]

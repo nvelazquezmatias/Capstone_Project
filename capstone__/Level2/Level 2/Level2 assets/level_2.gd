@@ -55,4 +55,4 @@ func _on_alien_foodeaten(value) -> void:
 	#pass # Replace with function body.
 	$ProgressBar.value= score 
 	if score >= $ProgressBar.max_value: 
-		get_tree().change_scene_to_file("res://LevelUp/LevelUp.tscn") # Replace with function body.
+		get_tree().change_scene_to_file("res://Final Scene/final.tscn") # Replace with function body.

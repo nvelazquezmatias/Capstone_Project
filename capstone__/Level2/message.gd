@@ -11,7 +11,3 @@ func _process(delta: float) -> void:
 
 func _on_timer_timeout() -> void:
 	queue_free()  # Remove the node when the timer is done
-
-
-func _on_character_body_2d_foodeaten() -> void:
-	pass # Replace with function body.

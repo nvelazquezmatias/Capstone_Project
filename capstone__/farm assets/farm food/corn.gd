@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var fall_speed: float = 250  # Speed at which the carrot falls
+@export var fall_speed: float = 100  # Speed at which the carrot falls
 @export var corn_sprite: Texture
 
 signal food_eaten(food_name)

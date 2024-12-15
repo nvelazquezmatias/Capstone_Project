@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dcjmc3inoug7t"]
+[gd_scene load_steps=18 format=3 uid="uid://dcjmc3inoug7t"]
 
 [ext_resource type="Script" path="res://farm assets/farmscene.gd" id="1_wd8vl"]
 [ext_resource type="Script" path="res://alien.gd" id="2_5lmj7"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bb70fjyx4stkf" path="res://farm assets/Toxins/waste.png" id="9_8ic65"]
 [ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="9_p8bfp"]
 [ext_resource type="Texture2D" uid="uid://io5j3yqfffpo" path="res://Buttons/file (25).png" id="10_rr5a6"]
+[ext_resource type="Script" path="res://farm assets/label_3.gd" id="11_s2xvh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_visd8"]
 radius = 120.0
@@ -144,6 +145,7 @@ offset_left = 216.0
 offset_top = 56.0
 offset_right = 968.0
 offset_bottom = 304.0
+metadata/_edit_lock_ = true
 
 [node name="Label" type="Label" parent="Node/Panel"]
 layout_mode = 1
@@ -203,9 +205,29 @@ offset_bottom = 366.888
 toggle_mode = true
 script = ExtResource("8_rjenk")
 
+[node name="Label3" type="Label" parent="."]
+offset_left = 248.0
+offset_top = 240.0
+offset_right = 896.0
+offset_bottom = 359.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("9_p8bfp")
+theme_override_font_sizes/font_size = 150
+text = "START!"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("11_s2xvh")
+
+[node name="Timer" type="Timer" parent="Label3"]
+autostart = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="foodeaten" from="Alien" to="." method="_on_alien_foodeaten"]
 [connection signal="area_entered" from="Alien/Area2D" to="Alien" method="_on_area_2d_area_entered"]
 [connection signal="timeout" from="spawntimer" to="." method="_on_spawntimer_timeout"]
 [connection signal="pressed" from="Node/TextureButton" to="Node/TextureButton" method="_on_pressed"]
 [connection signal="toggled" from="Node/TextureButton" to="Node/TextureButton" method="_on_toggled"]
+[connection signal="timeout" from="Label3/Timer" to="Label3" method="_on_timer_timeout"]
