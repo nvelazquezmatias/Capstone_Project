@@ -10,9 +10,9 @@ height = 128.0
 [node name="ToxicWaste" type="Area2D" groups=["toxic"]]
 script = ExtResource("1_nwllk")
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3.25, 3.25)
+texture = ExtResource("2_5qmhp")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_0qj2g")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(3, 3)
-texture = ExtResource("2_5qmhp")

@@ -9,10 +9,10 @@ radius = 56.5685
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_eydat")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_vka5t")
-
 [node name="PeanutButter" type="Sprite2D" parent="."]
 position = Vector2(-1.90735e-06, -1.90735e-06)
 scale = Vector2(3.125, 3.125)
 texture = ExtResource("2_40i38")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_vka5t")

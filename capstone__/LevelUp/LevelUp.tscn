@@ -1,7 +1,8 @@
-[gd_scene load_steps=16 format=3 uid="uid://1hmbs4v73u74"]
+[gd_scene load_steps=17 format=3 uid="uid://1hmbs4v73u74"]
 
 [ext_resource type="Script" path="res://LevelUp/reward.gd" id="1_k7cjp"]
 [ext_resource type="Texture2D" uid="uid://sg0qdwu35toc" path="res://Menu/Background_space_original.png" id="2_an2pm"]
+[ext_resource type="AudioStream" uid="uid://dop1dsw7ycl4d" path="res://LevelUp/level-up-bonus-sequence-3-186892.mp3" id="2_o2p5b"]
 [ext_resource type="Texture2D" uid="uid://beg4bg0brq8o2" path="res://LevelUp/FallingStar_Sprites.png" id="3_3fpu2"]
 [ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="4_dh2ti"]
 [ext_resource type="Texture2D" uid="uid://c3ksalbox81sp" path="res://Buttons/buttons asset pack/GreenButtons.png" id="7_jsoig"]
@@ -79,6 +80,10 @@ animations = [{
 
 [node name="Reward" type="Node2D"]
 script = ExtResource("1_k7cjp")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_o2p5b")
+autoplay = true
 
 [node name="BackgroundSpaceOriginal" type="Sprite2D" parent="."]
 position = Vector2(574.24, 329.844)

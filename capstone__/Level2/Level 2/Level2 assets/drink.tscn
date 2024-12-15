@@ -4,16 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://dhrdhpoee55vr" path="res://Level2/Level 2/Level2 assets/Pixel_Mart/soft_drink_red.png" id="2_ex6y6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3c6m8"]
-radius = 51.5329
-height = 144.0
+radius = 32.0
+height = 128.0
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_viw3i")
 
+[node name="SoftDrinkRed" type="Sprite2D" parent="."]
+position = Vector2(-4.76837e-07, -4.76837e-07)
+scale = Vector2(3.26562, 3.26562)
+texture = ExtResource("2_ex6y6")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_3c6m8")
-
-[node name="SoftDrinkRed" type="Sprite2D" parent="."]
-position = Vector2(7.62939e-06, 0)
-scale = Vector2(3.75, 3.75)
-texture = ExtResource("2_ex6y6")

@@ -4,20 +4,20 @@
 [ext_resource type="Texture2D" uid="uid://rsds422pavvx" path="res://Level2/Level 2/Level2 assets/Pixel_Mart/potatochip_green.png" id="2_wymfw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ymn2a"]
-radius = 27.4366
-height = 60.9466
+radius = 24.2938
+height = 54.6611
 
 [node name="Area2D" type="Area2D"]
 position = Vector2(411, 231)
 scale = Vector2(2.63281, 2.63281)
 script = ExtResource("1_ne70r")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-156.107, -87.739)
-rotation = -1.53589
-shape = SubResource("CapsuleShape2D_ymn2a")
-
 [node name="PotatochipGreen" type="Sprite2D" parent="."]
 position = Vector2(-156.107, -87.739)
-scale = Vector2(1.3546, 1.3546)
+scale = Vector2(1.33568, 1.34719)
 texture = ExtResource("2_wymfw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-156.107, -87.7389)
+rotation = -1.53589
+shape = SubResource("CapsuleShape2D_ymn2a")

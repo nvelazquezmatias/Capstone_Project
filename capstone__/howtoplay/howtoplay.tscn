@@ -66,9 +66,9 @@ vertical_alignment = 1
 
 [node name="RichTextLabel" type="RichTextLabel" parent="(2)"]
 offset_left = -109.764
-offset_top = -231.887
-offset_right = 91.2363
-offset_bottom = -157.887
+offset_top = -221.347
+offset_right = 91.2366
+offset_bottom = -147.347
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("5_vk2pv")
 theme_override_font_sizes/normal_font_size = 50
@@ -76,15 +76,14 @@ text = "How to Play:"
 scroll_active = false
 
 [node name="Label2" type="Label" parent="(2)"]
-offset_left = -274.409
-offset_top = -210.806
-offset_right = 274.591
-offset_bottom = 346.194
+offset_left = -256.0
+offset_top = -232.0
+offset_right = 293.0
+offset_bottom = 325.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_vk2pv")
 theme_override_font_sizes/font_size = 40
-text = "Move: Use the arrow keys (< and >) to 
-navigate 
+text = "Move: Use the arrow keys to navigate 
 
 Collect Food: Gather food items to fill 
 your bag

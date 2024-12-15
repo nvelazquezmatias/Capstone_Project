@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://dcjmc3inoug7t"]
+[gd_scene load_steps=20 format=3 uid="uid://dcjmc3inoug7t"]
 
 [ext_resource type="Script" path="res://farm assets/farmscene.gd" id="1_wd8vl"]
 [ext_resource type="Script" path="res://alien.gd" id="2_5lmj7"]
+[ext_resource type="AudioStream" uid="uid://cjho4apfpmg5w" path="res://Farm Opening Scene/ambience_farm_02wav-14806 (1).mp3" id="2_vpu5w"]
 [ext_resource type="Texture2D" uid="uid://c2qmbfdh7g4xm" path="res://farm assets/Alien-1.png" id="3_jl67s"]
 [ext_resource type="Texture2D" uid="uid://f1lg68wqr40y" path="res://farm assets/farm morning.jpeg" id="4_rtdgg"]
 [ext_resource type="FontFile" uid="uid://cp6f0dmixs60v" path="res://Menu/magofonts/mago1.ttf" id="5_sn2q0"]
@@ -11,6 +12,7 @@
 [ext_resource type="FontFile" uid="uid://c7cvil1oewmmn" path="res://Menu/magofonts/mago3.ttf" id="9_p8bfp"]
 [ext_resource type="Texture2D" uid="uid://io5j3yqfffpo" path="res://Buttons/file (25).png" id="10_rr5a6"]
 [ext_resource type="Script" path="res://farm assets/label_3.gd" id="11_s2xvh"]
+[ext_resource type="AudioStream" uid="uid://i3v38lpicgaw" path="res://Menu/Sound SFX/ui-click-43196.mp3" id="12_jo56u"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_visd8"]
 radius = 120.0
@@ -32,6 +34,14 @@ size = Vector2(763.179, 20)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_wd8vl")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_jo56u")
+
+[node name="AmbienceFarm02Wav-14806(1)" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(360, 512)
+stream = ExtResource("2_vpu5w")
+autoplay = true
 
 [node name="Label" type="Label" parent="."]
 z_index = 1
